@@ -1,0 +1,31 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="ESTADOS_LABORATORIOS" directorySegmentName="seg_0" id="199E02B7-BD6B-0FF7-0119-EC0C743F8AF7">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 11:45:24 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ID_ESTADO_LAB" id="54B6C430-DE64-6580-C587-613856C65FF9">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 11:46:27 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NOMBRE_EST_LAB" id="C2B078AE-846F-646D-7C49-C21001D8A724">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 11:46:27 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="ESTADOS_LABORATORIOS_PK" id="B59C2B6B-5413-46FE-7932-EE81DAD9B330">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 11:46:27 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

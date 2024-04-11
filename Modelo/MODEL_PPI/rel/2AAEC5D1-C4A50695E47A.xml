@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="PPI_Natura" id="2AAEC5D1-EB40-3B9A-F861-C4A50695E47A" mainViewID="9FE0A2C7-7A72-C108-EDDC-DF27FB0C7F4C">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 02:37:19 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<selectedRDBMSSite>01F6E6D1-21D0-CFBD-ABDD-3988D1813575</selectedRDBMSSite>
+<importConnectionStamps>
+<importConnectionStamp class="oracle.dbtools.crest.imports.DBConnectionStamp">
+<connName>PPI - Naturantioquia</connName>
+<connUser>user_naturantioquia</connUser>
+<connType>1</connType>
+</importConnectionStamp>
+</importConnectionStamps>
+</relationalModel>

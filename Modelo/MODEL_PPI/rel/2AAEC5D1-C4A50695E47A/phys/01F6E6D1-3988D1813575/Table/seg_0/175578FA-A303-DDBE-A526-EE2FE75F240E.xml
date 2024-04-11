@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="PRODUCTOS" directorySegmentName="seg_0" id="175578FA-A303-DDBE-A526-EE2FE75F240E">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 16:59:48 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<schemaObject>CE4073F2-AF50-BA4D-6BEB-9EE82432F949</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>8D805A85-D93E-309E-FE50-BC3F8BD92926</segment>
+<tableSpace>FBD35595-F199-D82C-481C-A02D500F881C</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="FECHA_ACTUALIZACION" id="0BF26AAD-2995-4759-4690-005666D6F688">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 16:59:48 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_LABORATORIOS" id="19A15D93-B131-8B28-804D-6B04109C742A">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 16:59:48 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_PRODUCTO" id="20003F99-27E0-724C-D543-543531A430A4">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 16:59:48 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NOMBRE_PRODUCTO" id="5761184A-58A1-715E-942E-67641159276F">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 16:59:48 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DESCRIPCION_PRODUCTO" id="8118D272-B4BD-0B74-B257-99827DC09B25">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 16:59:48 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PRECIO" id="9C98DE21-6677-5501-2DBE-1F2BA6E4E81A">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 16:59:48 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FECHA_CREACION" id="B4BAAFF6-1552-0EE9-425B-B775188BA284">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 16:59:48 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="STOCK" id="E3B61405-D9DA-1687-8284-915A276F22EE">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 16:59:48 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PRODUCTOS_PK" id="465843DA-3FAF-3A9A-9C2D-DC418D323017">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 16:59:48 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<schemaObject>CE4073F2-AF50-BA4D-6BEB-9EE82432F949</schemaObject>
+<segment>CAAF4DA5-693A-9A5F-8E42-012BBD73D4C1</segment>
+<tableSpace>FBD35595-F199-D82C-481C-A02D500F881C</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="PRODUCTOS_LABORATORIOS_FK" id="16782F68-7A2C-071A-F50B-76A1C7B8B583">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 16:59:48 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PRODUCTOS_PK" id="167AA8B5-4BE0-8938-BFF9-E8A1D670CF5C">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 16:59:48 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<segment>CAAF4DA5-693A-9A5F-8E42-012BBD73D4C1</segment>
+<tableSpace>FBD35595-F199-D82C-481C-A02D500F881C</tableSpace>
+<existingIndex>465843DA-3FAF-3A9A-9C2D-DC418D323017</existingIndex>
+<indexSegment>CAAF4DA5-693A-9A5F-8E42-012BBD73D4C1</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="56F31F99-0593-6F7C-E534-56BC864B7DAF" containerWithKeyObject="6D1CAEEE-F2FF-FAE9-C8EC-1985E112F3E3" localFKIndex="4A353D65-2E15-255E-A855-FF1DB43E9B83" name="PEDIDOS_PRIORIDADES_FK">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 12:01:54 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<referredTableLongName>PRIORIDADES</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>14EFA808-F1E5-37D2-2EC9-973E4E275449</referredTableID>
+<keyObject>5BA845EC-2372-60E7-EDDC-BA362AA2DDA0</keyObject>
+<referredKeyID>5BA845EC-2372-60E7-EDDC-BA362AA2DDA0</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_PRIORIDAD</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

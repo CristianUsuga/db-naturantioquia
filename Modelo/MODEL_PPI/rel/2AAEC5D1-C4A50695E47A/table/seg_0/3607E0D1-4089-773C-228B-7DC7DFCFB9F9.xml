@@ -1,0 +1,137 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3607E0D1-4089-773C-228B-7DC7DFCFB9F9" name="SECCIONES_ENVIOS">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 11:30:32 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<ordsAlias>table_19</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_SECCION" id="FE3BA18B-D9E8-3456-50D9-01E150CE97D3">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 11:32:32 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DES_SECCION" id="CF071AC8-F0D0-59E1-89C8-E81F166C3F29">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 11:37:40 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CANTIDAD_ENTREGADA" id="26BCBF6B-BC1E-B2B3-12EC-3AA3B46009FC">
+<createdBy>usuga</createdBy>
+<createdTime>2023-11-21 19:56:48 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_ASIGNACION" id="57BC6591-1A54-D61C-1457-37F8133916A3">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 11:37:40 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_ENTREGA" id="D37FA5FB-09A6-BF13-86BD-ECBCB5A12158">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 11:37:40 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_TRANSPORTISTA" id="C316067B-9E6D-6749-D148-97A46D68F9DC">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 11:37:40 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F65D47F3-8C01-2CDD-EFA8-B74CBD0E1238" referredColumn="3815F6F0-F2ED-F131-61F4-F76DE1347902"/>
+</associations>
+</Column>
+<Column name="ID_PRODUCTO" id="F988646E-BFF5-4219-ADB9-595E491B9534">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 11:32:32 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4682DC73-D0E2-C299-5600-2C3D6ABF943F" referredColumn="3E796AE5-3181-DAEA-4EE0-34E891D29A4A"/>
+</associations>
+</Column>
+<Column name="ID_PEDIDO" id="926E8216-3CB9-FCCF-FD67-059FE02CE7F5">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 11:32:32 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4682DC73-D0E2-C299-5600-2C3D6ABF943F" referredColumn="B19EBC16-0C1D-34B6-13AC-63B2460EA40A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1B6B7F80-3925-ADAC-7842-EE0DB2C6AD71" name="SECCIONES_ENVIOS_PK">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 11:32:32 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FE3BA18B-D9E8-3456-50D9-01E150CE97D3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9A88CED0-E89B-33D2-5D89-6BD9834193F1" name="SECCIONES_ENVIOS_DETALLE_PEDIDOS_FK">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 11:33:24 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F988646E-BFF5-4219-ADB9-595E491B9534"/>
+<colUsage columnID="926E8216-3CB9-FCCF-FD67-059FE02CE7F5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D5B229F7-A5B4-0AA5-DAE9-1D6A483080C0" name="SECCIONES_ENVIOS_TRANSPORTISTAS_FK">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 12:07:47 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C316067B-9E6D-6749-D148-97A46D68F9DC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

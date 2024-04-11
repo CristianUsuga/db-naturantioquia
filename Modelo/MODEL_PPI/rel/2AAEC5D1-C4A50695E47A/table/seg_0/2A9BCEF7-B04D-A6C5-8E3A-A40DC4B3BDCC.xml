@@ -1,0 +1,136 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2A9BCEF7-B04D-A6C5-8E3A-A40DC4B3BDCC" name="MOVIMIENTOS_INVENTARIO">
+<createdBy>usuga</createdBy>
+<createdTime>2024-03-12 20:40:58 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<ordsAlias>table_28</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_MOVIMIENTO" id="6EF6B5EA-701E-A5A9-B445-560924633FC3">
+<createdBy>usuga</createdBy>
+<createdTime>2024-03-12 20:50:36 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_PRODUCTO" id="55602874-A851-4413-FC1B-BD2BEE7B1CE6">
+<createdBy>usuga</createdBy>
+<createdTime>2024-03-12 20:50:36 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="52C59CC2-5861-E8FC-60B1-47BAF12D8400" referredColumn="F2735894-FC19-7944-B033-2E30AB94C4AC"/>
+</associations>
+</Column>
+<Column name="ID_LOTE" id="8FB9ACC6-D8F0-1AD3-E2DD-72773C6D74FF">
+<createdBy>usuga</createdBy>
+<createdTime>2024-03-12 20:50:36 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="86BBFB33-CDE8-1FC6-801F-09760EA19D9D" referredColumn="2FE1804B-C401-C4DC-93B2-18F9A900D373"/>
+</associations>
+</Column>
+<Column name="CANTIDAD" id="EFEDF7D9-2A38-9D0B-920F-30881D27D1D8">
+<createdBy>usuga</createdBy>
+<createdTime>2024-03-12 20:50:36 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_MOVIMIENTO" id="CD542FAB-7D52-6660-A8FD-48F382D1BA65">
+<createdBy>usuga</createdBy>
+<createdTime>2024-03-12 20:50:36 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOTAS" id="3BC661FF-441A-8C9D-76B1-A090CED5B089">
+<createdBy>usuga</createdBy>
+<createdTime>2024-03-12 20:50:36 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250</dataTypeSize>
+<ownDataTypeParameters>250,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIPO_MOVIMIENTO" id="3AD563C3-CAA6-D835-CB5D-B3923A9E35A2">
+<createdBy>usuga</createdBy>
+<createdTime>2024-03-12 20:50:36 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A8B21F9B-B37F-93C3-485A-FB0DCBB066EE" referredColumn="D0B9B663-B4CB-91AB-941B-8F5D3392F906"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BD814433-6C22-29E0-7681-094AE9DB179E" name="MOVIMIENTOS_INVENTARIO_PK">
+<createdBy>usuga</createdBy>
+<createdTime>2024-03-12 20:51:09 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6EF6B5EA-701E-A5A9-B445-560924633FC3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F818B2A9-B43B-2A5A-4795-815D5496674E" name="MOVIMIENTOS_INVENTARIO_PRODUCTOS_FK">
+<createdBy>usuga</createdBy>
+<createdTime>2024-03-12 21:48:26 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="55602874-A851-4413-FC1B-BD2BEE7B1CE6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BFDEA345-19A1-825E-9DB8-0E3A44EBF0F6" name="MOVIMIENTOS_INVENTARIO_LOTES_PRODUCTOS_FK">
+<createdBy>usuga</createdBy>
+<createdTime>2024-03-12 21:49:27 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8FB9ACC6-D8F0-1AD3-E2DD-72773C6D74FF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A5E0ADEF-543D-AD46-8468-38F2FEEA52A7" name="MOVIMIENTOS_INVENTARIO_TIPOS_MOVIMIENTOS_FK">
+<createdBy>usuga</createdBy>
+<createdTime>2024-03-13 09:42:14 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3AD563C3-CAA6-D835-CB5D-B3923A9E35A2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

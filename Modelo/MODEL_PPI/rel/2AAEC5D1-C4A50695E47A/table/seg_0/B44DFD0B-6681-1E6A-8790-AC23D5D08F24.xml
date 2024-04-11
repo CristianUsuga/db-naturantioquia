@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B44DFD0B-6681-1E6A-8790-AC23D5D08F24" name="TRANSPORTISTAS">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 12:02:17 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<ordsAlias>table_26</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_TRANSPORTISTA" id="3815F6F0-F2ED-F131-61F4-F76DE1347902">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 12:05:43 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE" id="EE573CE9-1612-8449-1839-E36CA47D2D57">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 12:05:43 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CELULAR" id="88EF772E-9DD9-A969-8E95-C4CB8A842C2A">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 12:05:43 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TELEFONO" id="717E4D80-9F2F-C875-C8C7-34BBF8EDFC36">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 12:05:43 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CORREO" id="7BF8190B-09C8-77DB-1A52-8599FF92B3AC">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 12:05:43 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIPO" id="00142FFF-9B58-9131-33FC-61CA7D709BCC">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 12:05:43 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C158E18A-7974-8C95-761D-1FEE25357600" referredColumn="FFE549E8-6035-6BB8-ECDE-7DE069F4C8C9"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9DAAF78B-CC38-8BFE-891E-1E7D82508F36" name="TRANSPORTISTAS_PK">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 12:05:43 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3815F6F0-F2ED-F131-61F4-F76DE1347902"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6785C364-3DD4-3622-352F-099F30377EB5" name="TRANSPORTISTAS_TIPO_TRANSPORTISTA_FK">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 12:07:36 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="00142FFF-9B58-9131-33FC-61CA7D709BCC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

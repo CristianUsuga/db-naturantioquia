@@ -1,0 +1,70 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9D41A43D-10ED-AAB6-506C-5C45FA183BC8" name="CIUDADES">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 07:55:19 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<ordsAlias>table_12</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_DEPARTAMENTO" id="5DFA4AC8-132C-DF02-24E2-1E2FDE6D02ED">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 08:00:14 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="05BD225E-BC46-FE4B-EF5E-752A0DAFA902" referredColumn="1CAB22F1-0E0B-9864-D954-D84E9F0FEC43"/>
+</associations>
+</Column>
+<Column name="ID_CIUDAD" id="1C956FF4-25AF-A35A-C356-BA77DFE1A741">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 08:00:14 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE_CIUDAD" id="D9F1BA21-920D-C51D-966A-A128C854D09E">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 08:00:14 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7650239E-8F3D-A247-279C-892EE1332401" name="CIUDADES_PK">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 08:00:14 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5DFA4AC8-132C-DF02-24E2-1E2FDE6D02ED"/>
+<colUsage columnID="1C956FF4-25AF-A35A-C356-BA77DFE1A741"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E6A29A4A-76DE-7C64-E88B-6439FAE8C53F" name="CIUDADES_DEPARTAMENTOS_FK">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 08:10:54 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5DFA4AC8-132C-DF02-24E2-1E2FDE6D02ED"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

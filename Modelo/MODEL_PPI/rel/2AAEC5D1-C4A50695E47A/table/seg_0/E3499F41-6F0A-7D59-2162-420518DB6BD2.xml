@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E3499F41-6F0A-7D59-2162-420518DB6BD2" name="LOTES_PRODUCTOS">
+<createdBy>usuga</createdBy>
+<createdTime>2024-03-12 20:29:32 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<ordsAlias>table_27</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_LOTE" id="2FE1804B-C401-C4DC-93B2-18F9A900D373">
+<createdBy>usuga</createdBy>
+<createdTime>2024-03-12 20:37:15 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CANTIDAD" id="3F18495C-F79D-DAC0-5376-E0B2BC4DA637">
+<createdBy>usuga</createdBy>
+<createdTime>2024-03-12 20:37:15 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_VENCIMIENTO" id="2E69BBF6-6F25-4165-F3F5-A49303D7DBD6">
+<createdBy>usuga</createdBy>
+<createdTime>2024-03-12 20:37:15 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_PRODUCTO" id="7D98272D-DECA-4C5F-D0F5-27BA0FEE5586">
+<createdBy>usuga</createdBy>
+<createdTime>2024-03-12 20:37:15 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BDE7642C-48FE-EE65-6F6B-EF16ADACF5AF" referredColumn="F2735894-FC19-7944-B033-2E30AB94C4AC"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1D9F7BA7-712A-9275-3448-DAA769F843CF" name="LOTES_PRODUCTOS_PK">
+<createdBy>usuga</createdBy>
+<createdTime>2024-03-12 20:37:15 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2FE1804B-C401-C4DC-93B2-18F9A900D373"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CD10FFD6-9AFD-2BFE-771A-8B58D57D7A5D" name="LOTES_PRODUCTOS_PRODUCTOS_FK">
+<createdBy>usuga</createdBy>
+<createdTime>2024-03-12 20:38:01 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7D98272D-DECA-4C5F-D0F5-27BA0FEE5586"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

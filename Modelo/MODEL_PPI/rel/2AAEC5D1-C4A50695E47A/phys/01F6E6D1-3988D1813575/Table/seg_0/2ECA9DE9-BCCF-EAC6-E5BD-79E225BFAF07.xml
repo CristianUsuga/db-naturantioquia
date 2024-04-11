@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="LABORATORIOS" directorySegmentName="seg_0" id="2ECA9DE9-BCCF-EAC6-E5BD-79E225BFAF07">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 16:59:48 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<schemaObject>CE4073F2-AF50-BA4D-6BEB-9EE82432F949</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>8D805A85-D93E-309E-FE50-BC3F8BD92926</segment>
+<tableSpace>FBD35595-F199-D82C-481C-A02D500F881C</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ID_LABORATORIO" id="5496AA62-2BAA-5024-25FA-368B88155F0B">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 16:59:48 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CELULAR" id="615DD199-337C-829D-C256-6ADD4C9B1574">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 16:59:48 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TELEFONO" id="C1D24C9A-9323-37E2-163D-3ABFE7D93CAE">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 16:59:48 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NOMBRE_LABORATORIO" id="CA37323B-EF3E-A640-B9C1-AAEA888A4D87">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 16:59:48 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ESTADO_LABORATORIO" id="CAEF93ED-DC80-07CD-31D9-F541238ACA4C">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 16:59:48 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CORREO" id="EDC106B5-6B27-8333-5946-F7FD1A8A012A">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 16:59:48 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="LABORATORIOS_PK" id="F060BC56-2BC7-FDA9-E9E2-BF9B8A1EAEF1">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 16:59:48 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<schemaObject>CE4073F2-AF50-BA4D-6BEB-9EE82432F949</schemaObject>
+<segment>CAAF4DA5-693A-9A5F-8E42-012BBD73D4C1</segment>
+<tableSpace>FBD35595-F199-D82C-481C-A02D500F881C</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="LABORATORIOS_ESTADOS_LABORATORIOS_FK" id="CA9DCFD7-BBAC-3477-D294-C6F7A18C5169">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 17:19:58 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="LABORATORIOS_PK" id="CFF6E6EC-AAE2-8D2D-2003-0A34DC3E9FB1">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 16:59:48 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<segment>CAAF4DA5-693A-9A5F-8E42-012BBD73D4C1</segment>
+<tableSpace>FBD35595-F199-D82C-481C-A02D500F881C</tableSpace>
+<existingIndex>F060BC56-2BC7-FDA9-E9E2-BF9B8A1EAEF1</existingIndex>
+<indexSegment>CAAF4DA5-693A-9A5F-8E42-012BBD73D4C1</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

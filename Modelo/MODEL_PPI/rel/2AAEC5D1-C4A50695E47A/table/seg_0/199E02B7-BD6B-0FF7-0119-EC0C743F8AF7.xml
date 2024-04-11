@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="199E02B7-BD6B-0FF7-0119-EC0C743F8AF7" name="ESTADOS_LABORATORIOS">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 11:45:24 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<ordsAlias>table_21</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_ESTADO_LAB" id="54B6C430-DE64-6580-C587-613856C65FF9">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 11:46:27 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE_EST_LAB" id="C2B078AE-846F-646D-7C49-C21001D8A724">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 11:46:27 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B59C2B6B-5413-46FE-7932-EE81DAD9B330" name="ESTADOS_LABORATORIOS_PK">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 11:46:27 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="54B6C430-DE64-6580-C587-613856C65FF9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

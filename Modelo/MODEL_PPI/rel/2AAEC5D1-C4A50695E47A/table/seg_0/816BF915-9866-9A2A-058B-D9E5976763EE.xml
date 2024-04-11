@@ -1,0 +1,142 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="816BF915-9866-9A2A-058B-D9E5976763EE" name="PRODUCTOS">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 11:23:21 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<ordsAlias>table_18</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_PRODUCTO" id="F2735894-FC19-7944-B033-2E30AB94C4AC">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 11:29:05 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE_PRODUCTO" id="9F31EE43-E079-5EF0-B2C5-60BCF672B295">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 11:29:05 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPCION_PRODUCTO" id="8D0044A9-0455-6B1D-613C-7D82605EC8AA">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 11:29:05 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRECIO" id="59A5C33F-A79E-ED98-F4F5-30C4EEAA7A96">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 11:29:05 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STOCK_MINIMO" id="E9340DCE-B39A-970F-8660-583553D39CB5">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 11:29:05 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STOCK_MAXIMO" id="7802C45F-B341-E4EF-E6A8-7BB2BD66AC0A">
+<createdBy>usuga</createdBy>
+<createdTime>2023-11-21 19:29:26 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CANTIDAD_ACTUAL" id="5F1A625B-F8BA-B436-724D-0C385041475F">
+<createdBy>usuga</createdBy>
+<createdTime>2023-11-21 19:29:26 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_CREACION" id="86575B98-1A8D-2634-D583-2957E165C532">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 11:29:05 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_ACTUALIZACION" id="E6B7796E-15DE-F22C-F763-BFAF4EE4BABB">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 11:29:05 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_LABORATORIOS" id="8B92B9DC-51F5-9FBD-C469-80CE05C56AB9">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 11:29:05 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C7F5419F-E16A-A82B-8871-F271CE568CD2" referredColumn="A259E335-76DE-C06A-512B-D0438B16367C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CCA41EA2-C9C6-37B4-F6F8-F6D7B9F4E432" name="PRODUCTOS_PK">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 11:29:05 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F2735894-FC19-7944-B033-2E30AB94C4AC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="09DB88A6-3857-A3F9-6D01-CDC43AD4479C" name="PRODUCTOS_LABORATORIOS_FK">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 11:46:57 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8B92B9DC-51F5-9FBD-C469-80CE05C56AB9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

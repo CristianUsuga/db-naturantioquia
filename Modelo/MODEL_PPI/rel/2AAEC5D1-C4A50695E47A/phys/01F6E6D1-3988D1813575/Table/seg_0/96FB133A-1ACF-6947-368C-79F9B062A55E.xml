@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="USUARIOS" directorySegmentName="seg_0" id="96FB133A-1ACF-6947-368C-79F9B062A55E">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 03:25:43 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="FECHA_NACIMIENTO_USUARIO" id="1ACA1647-B1E0-96FD-8C3E-D6FF903E225C">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 03:25:43 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TELEFONO_USUARIO" id="35056CDB-B446-6FB5-3AC0-BB9930F76A00">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 03:25:43 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ROL_USUARIO" id="390A4876-9E45-5749-2AF8-E6D6985DC446">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 03:25:43 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CELULAR_USUARIO" id="4294555E-CFD6-1082-77C6-3A7352D7C7A2">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 03:25:43 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ESTADO_USUARIO" id="4AF2B96E-E666-6D17-77E4-CDCF2C997551">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 03:25:43 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PASSWORD_USUARIO" id="5626CAC3-A14D-CE1A-120C-33814660CD42">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 03:25:43 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PRIMER_APELLIDO_USUARIO" id="82B9666F-81EB-39BA-68EB-52BD4BD9EE03">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 03:25:43 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SEXO_USUARIO" id="9B0B8510-ECC7-FCDC-C125-63C8EF3C54F7">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 03:25:43 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NOMBRE_USUARIO" id="B4209E01-AC53-4C8D-431B-710448185186">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 03:25:43 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SEGUNDO_APELLIDO_USUARIO" id="C63AFB70-F11E-7842-9229-7C8204551185">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 03:25:43 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TIPO_DOCUMENTO" id="CC19A7AA-2D36-8D85-C43E-9D773AC73CEE">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 03:25:43 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DOCUMENTO_USUARIO" id="E332726A-9355-4064-0887-9F02302E0576">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 03:25:43 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CORREO_USUARIO" id="FDF0318E-6C6E-2A91-A2A6-3F2F532BF7F7">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 03:25:43 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="USUARIOS_ROLES_FK" id="4E6FE9CE-A84E-4AF7-AFB2-C8430432931A">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 06:51:47 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="USUARIOS_TIPOS_DOCUMENTOS_FK" id="5B69A9D3-4BB3-18C8-A09D-1BFB7EE667F2">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 07:05:41 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="USUARIOS_ESTADOS_USUARIOS_FK" id="B55D658A-DB67-2B91-E6ED-19832FD879C8">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 07:05:03 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="USUARIOS_SEXOS_FK" id="BA0B9757-8E1D-2FF4-F978-F6A470045296">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 07:04:44 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="USUARIOS_PK" id="8931E606-0FC0-F052-57F9-B7788818F613">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 03:25:43 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

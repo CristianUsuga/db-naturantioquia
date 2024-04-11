@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E8C73274-6D9B-0208-022C-873C44ACC007" name="LABORATORIOS">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 11:39:01 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<ordsAlias>table_20</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_LABORATORIO" id="A259E335-76DE-C06A-512B-D0438B16367C">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 11:44:03 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE_LABORATORIO" id="88D2E175-7CAC-04B3-EAB5-350B39F5A333">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 11:44:03 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CORREO" id="90CD25A6-D5E4-244E-B98E-BF149760152D">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 11:44:03 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TELEFONO" id="6618502B-82BF-9318-0180-9B059ABB7E62">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 11:44:03 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CELULAR" id="44E4384C-DFB9-AB50-C61D-1A898CFCDF88">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 11:44:03 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ESTADO_LABORATORIO" id="9497F6F2-6BDD-4834-1164-0109751E7315">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 11:44:03 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="05BAE389-0174-B6EB-918A-19AC95BDD9E9" referredColumn="54B6C430-DE64-6580-C587-613856C65FF9"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="089D11D2-152B-ED9D-0CC0-A3FB96ECBCBA" name="LABORATORIOS_PK">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 11:44:03 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A259E335-76DE-C06A-512B-D0438B16367C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8DB50863-BE68-D789-5CFF-B63B416558A5" name="LABORATORIOS_ESTADOS_LABORATORIOS_FK">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 11:46:41 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9497F6F2-6BDD-4834-1164-0109751E7315"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

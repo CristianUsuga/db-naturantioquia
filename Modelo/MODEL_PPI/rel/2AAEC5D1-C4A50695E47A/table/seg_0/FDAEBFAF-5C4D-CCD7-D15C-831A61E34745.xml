@@ -1,0 +1,128 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FDAEBFAF-5C4D-CCD7-D15C-831A61E34745" name="DETALLE_PEDIDOS">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 10:55:10 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<ordsAlias>table_17</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_PRODUCTO" id="3E796AE5-3181-DAEA-4EE0-34E891D29A4A">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 11:12:19 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5F108DAB-CFA6-01E7-CB37-457A2DA4C95D" referredColumn="F2735894-FC19-7944-B033-2E30AB94C4AC"/>
+</associations>
+</Column>
+<Column name="ID_PEDIDOS" id="B19EBC16-0C1D-34B6-13AC-63B2460EA40A">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 11:12:19 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="02B55C89-EDFA-500F-8170-79D8692D6A3E" referredColumn="64593378-6A54-3FE4-6A9D-7BD72E527D67"/>
+</associations>
+</Column>
+<Column name="CANTIDAD" id="241A81B3-9E15-F2EC-BCCB-4638A2BB1F2D">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 11:12:19 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCUENTO" id="CFB217A4-D13C-1FD5-CC96-6A00DF31DBD3">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 11:12:19 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,4,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRECIO_UNITARIO" id="78E69BE9-E3D9-29FA-F99E-663D1A6F9473">
+<createdBy>usuga</createdBy>
+<createdTime>2024-03-12 21:33:58 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CANTIDAD_ENTREGADA" id="303DD655-31D8-ED58-DF47-6D110D7A403D">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 11:23:10 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCUENTO_APLICADO" id="5736469F-98FB-518C-DD2A-4C61A393AEDD">
+<createdBy>usuga</createdBy>
+<createdTime>2024-03-12 23:26:14 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CC6F7F34-68E1-B30E-734E-60B2E6613D8B" name="DETALLE_PEDIDOS_PK">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 11:12:19 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3E796AE5-3181-DAEA-4EE0-34E891D29A4A"/>
+<colUsage columnID="B19EBC16-0C1D-34B6-13AC-63B2460EA40A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DEBEF17D-EFB0-C9A7-E38C-0AD1F73B5A3F" name="DETALLE_PEDIDOS_PEDIDOS_FK">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 11:16:06 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B19EBC16-0C1D-34B6-13AC-63B2460EA40A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3803EA5B-DED4-5781-8E70-E37163DED06B" name="DETALLE_PEDIDOS_PRODUCTOS_FK">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 11:29:27 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3E796AE5-3181-DAEA-4EE0-34E891D29A4A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

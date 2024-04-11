@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FF94083E-722D-79F3-F401-B065FA932029" name="FORMULARIOS">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 06:50:00 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_FORMULARIO" id="6F87D78B-136C-48B1-CAF1-D51D1748491E">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 06:50:54 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE_FORMULARIO" id="998C1249-BD5A-8596-BEF0-CA0AA998EB43">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 06:50:54 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C6C333F9-CC68-29DE-2A9C-68097CC7A6BE" name="FORMULARIOS_PK">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 06:50:54 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6F87D78B-136C-48B1-CAF1-D51D1748491E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

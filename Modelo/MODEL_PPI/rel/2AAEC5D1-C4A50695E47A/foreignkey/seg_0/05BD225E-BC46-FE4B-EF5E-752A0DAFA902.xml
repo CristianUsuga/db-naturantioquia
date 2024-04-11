@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="05BD225E-BC46-FE4B-EF5E-752A0DAFA902" containerWithKeyObject="9D41A43D-10ED-AAB6-506C-5C45FA183BC8" localFKIndex="E6A29A4A-76DE-7C64-E88B-6439FAE8C53F" name="CIUDADES_DEPARTAMENTOS_FK">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 08:10:54 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<referredTableLongName>DEPARTAMENTOS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>F38C531B-4838-F401-B853-847509C3FBCC</referredTableID>
+<keyObject>715E295F-EEE7-8D6C-BC9A-6D98E0678A07</keyObject>
+<referredKeyID>715E295F-EEE7-8D6C-BC9A-6D98E0678A07</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_DEPARTAMENTO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

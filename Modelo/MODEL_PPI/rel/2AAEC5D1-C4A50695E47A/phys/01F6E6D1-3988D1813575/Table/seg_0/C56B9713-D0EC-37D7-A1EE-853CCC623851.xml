@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="PERFILES" directorySegmentName="seg_0" id="C56B9713-D0EC-37D7-A1EE-853CCC623851">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 17:19:58 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<schemaObject>CE4073F2-AF50-BA4D-6BEB-9EE82432F949</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>8D805A85-D93E-309E-FE50-BC3F8BD92926</segment>
+<tableSpace>FBD35595-F199-D82C-481C-A02D500F881C</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ROLES_ID" id="7CD2E8AB-D485-1047-0DF1-71545D621184">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 17:19:58 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NOMBRE_PERFIL" id="8AE82107-F1BB-883D-E7A7-2667294CB5DC">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 17:19:58 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_PERFIL" id="C79125C3-D309-5419-28E2-72473A92A531">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 17:19:58 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PERFILES_PK" id="7D2C6956-4B20-6E16-B91F-C14B8BABB91C">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 17:19:58 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<schemaObject>CE4073F2-AF50-BA4D-6BEB-9EE82432F949</schemaObject>
+<segment>CAAF4DA5-693A-9A5F-8E42-012BBD73D4C1</segment>
+<tableSpace>FBD35595-F199-D82C-481C-A02D500F881C</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="PERFILES_ROLES_FK" id="23B79B65-5BFF-039E-477E-E007D18C2B7E">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 17:19:58 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PERFILES_PK" id="D2CC17DF-BD84-7EEE-46AA-E1B696D2F2B2">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 17:19:58 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<segment>CAAF4DA5-693A-9A5F-8E42-012BBD73D4C1</segment>
+<tableSpace>FBD35595-F199-D82C-481C-A02D500F881C</tableSpace>
+<existingIndex>7D2C6956-4B20-6E16-B91F-C14B8BABB91C</existingIndex>
+<indexSegment>CAAF4DA5-693A-9A5F-8E42-012BBD73D4C1</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

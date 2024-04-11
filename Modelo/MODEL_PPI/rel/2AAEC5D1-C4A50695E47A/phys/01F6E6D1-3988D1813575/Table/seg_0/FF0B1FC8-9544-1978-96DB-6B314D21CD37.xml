@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="CATEGORIAS_PRODUCTOS" directorySegmentName="seg_0" id="FF0B1FC8-9544-1978-96DB-6B314D21CD37">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 17:19:58 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<schemaObject>CE4073F2-AF50-BA4D-6BEB-9EE82432F949</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>8D805A85-D93E-309E-FE50-BC3F8BD92926</segment>
+<tableSpace>FBD35595-F199-D82C-481C-A02D500F881C</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ID_CATEGORIA" id="52AC66A0-AF06-6554-EC44-F442061989F4">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 17:19:58 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_PRODUCTO" id="900ED95E-1D6F-3787-07CF-EADB04CED42F">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 17:19:58 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="CATEGORIAS_PRODUCTOS_PK" id="22533107-79E4-0183-890D-51ED577C1E42">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 17:19:58 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<schemaObject>CE4073F2-AF50-BA4D-6BEB-9EE82432F949</schemaObject>
+<segment>CAAF4DA5-693A-9A5F-8E42-012BBD73D4C1</segment>
+<tableSpace>FBD35595-F199-D82C-481C-A02D500F881C</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="CATEGORIAS_PRODUCTOS_PRODUCTOS_FK" id="C9B47B5B-7A53-9E74-94FA-42A1656C0E9D">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 17:19:58 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="CATEGORIAS_PRODUCTOS_CATEGORIAS_FK" id="ED11BF20-3671-F970-907E-A3CA15B48E2D">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 17:19:58 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="CATEGORIAS_PRODUCTOS_PK" id="FF69A1CB-6286-F0B8-50C6-CF5D25A8B9E8">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 17:19:58 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<segment>CAAF4DA5-693A-9A5F-8E42-012BBD73D4C1</segment>
+<tableSpace>FBD35595-F199-D82C-481C-A02D500F881C</tableSpace>
+<existingIndex>22533107-79E4-0183-890D-51ED577C1E42</existingIndex>
+<indexSegment>CAAF4DA5-693A-9A5F-8E42-012BBD73D4C1</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

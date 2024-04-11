@@ -1,0 +1,31 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="SEGUIMIENTOS" directorySegmentName="seg_0" id="34B9DC6B-7AFE-C790-BCD3-D6010BBABF13">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 10:48:11 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ID_SEGUIMIENTO" id="BB8064CA-196B-F2F9-6ACD-5A79D1E61C54">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 10:49:14 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NOMBRE_SEGUIMIENTO" id="CD31D619-BEAE-1FE4-2F69-A5446CEE0409">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 10:49:14 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="SEGUIMIENTOS_PK" id="B52A8D7C-A86C-D3C3-433F-CD7BAED91129">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 10:49:14 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

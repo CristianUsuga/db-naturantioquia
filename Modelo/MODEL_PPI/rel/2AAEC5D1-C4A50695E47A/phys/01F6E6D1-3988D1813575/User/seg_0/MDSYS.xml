@@ -1,0 +1,25 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<UserOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UserOraclev10g" name="MDSYS" directorySegmentName="seg_0" id="MDSYS">
+<sourceConnName>PPI - Naturantioquia</sourceConnName>
+<sourceObjName>MDSYS</sourceObjName>
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 03:25:29 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<schemaObject>9ADA2CC1-9670-97DE-1D5C-48F2B90FFA1E</schemaObject>
+<nullInstance>true</nullInstance>
+<storableNullInstance>true</storableNullInstance>
+<privileges>INHERIT ANY PRIVILEGES, ADMINISTER DATABASE TRIGGER, CREATE TRIGGER, CREATE ANY SEQUENCE, CREATE SEQUENCE, CREATE VIEW, DROP PUBLIC SYNONYM, CREATE PUBLIC SYNONYM, CREATE TABLE</privileges>
+<profile>DEFAULT</profile>
+<quotaItems>
+<QuotaItem class="oracle.dbtools.crest.model.design.storage.oracle.v10g.QuotaItemOraclev10g" name="QuotaItem1" id="959DD49F-A1F7-F211-8304-AB8E50903B36">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 17:19:58 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+</QuotaItem>
+<QuotaItem class="oracle.dbtools.crest.model.design.storage.oracle.v10g.QuotaItemOraclev10g" name="QuotaItem2" id="A8D9E4E8-EE11-E552-E832-BFA758BD5A5B">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 17:19:58 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+</QuotaItem>
+</quotaItems>
+</UserOraclev10g>

@@ -1,0 +1,68 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="PRODUCTOS" directorySegmentName="seg_0" id="816BF915-9866-9A2A-058B-D9E5976763EE">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 11:23:21 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="PRECIO" id="59A5C33F-A79E-ED98-F4F5-30C4EEAA7A96">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 11:29:05 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FECHA_CREACION" id="86575B98-1A8D-2634-D583-2957E165C532">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 11:29:05 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_LABORATORIOS" id="8B92B9DC-51F5-9FBD-C469-80CE05C56AB9">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 11:29:05 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DESCRIPCION_PRODUCTO" id="8D0044A9-0455-6B1D-613C-7D82605EC8AA">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 11:29:05 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NOMBRE_PRODUCTO" id="9F31EE43-E079-5EF0-B2C5-60BCF672B295">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 11:29:05 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FECHA_ACTUALIZACION" id="E6B7796E-15DE-F22C-F763-BFAF4EE4BABB">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 11:29:05 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="STOCK" id="E9340DCE-B39A-970F-8660-583553D39CB5">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 11:29:05 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_PRODUCTO" id="F2735894-FC19-7944-B033-2E30AB94C4AC">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 11:29:05 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="PRODUCTOS_LABORATORIOS_FK" id="09DB88A6-3857-A3F9-6D01-CDC43AD4479C">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 11:46:57 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PRODUCTOS_PK" id="CCA41EA2-C9C6-37B4-F6F8-F6D7B9F4E432">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 11:29:05 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

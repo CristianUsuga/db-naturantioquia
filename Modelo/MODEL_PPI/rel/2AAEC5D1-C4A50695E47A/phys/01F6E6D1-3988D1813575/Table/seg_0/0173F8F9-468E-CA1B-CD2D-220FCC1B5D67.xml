@@ -1,0 +1,50 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="ROLES" directorySegmentName="seg_0" id="0173F8F9-468E-CA1B-CD2D-220FCC1B5D67">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 17:19:58 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<schemaObject>CE4073F2-AF50-BA4D-6BEB-9EE82432F949</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>8D805A85-D93E-309E-FE50-BC3F8BD92926</segment>
+<tableSpace>FBD35595-F199-D82C-481C-A02D500F881C</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ID_ROL" id="F1081B79-7C38-79F1-557B-1B92E8D59D89">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 17:19:58 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ROL" id="FF100ED6-B27F-F526-D9D3-E35D698DF5D8">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 17:19:58 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="ROLES_PK" id="615345D4-656E-2B4A-2F0D-925AF78DE1D7">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 17:19:58 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<schemaObject>CE4073F2-AF50-BA4D-6BEB-9EE82432F949</schemaObject>
+<segment>CAAF4DA5-693A-9A5F-8E42-012BBD73D4C1</segment>
+<tableSpace>FBD35595-F199-D82C-481C-A02D500F881C</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="ROLES_PK" id="4093F1A7-CDC1-E987-07EB-2E598E319CF8">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 17:19:58 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<segment>CAAF4DA5-693A-9A5F-8E42-012BBD73D4C1</segment>
+<tableSpace>FBD35595-F199-D82C-481C-A02D500F881C</tableSpace>
+<existingIndex>615345D4-656E-2B4A-2F0D-925AF78DE1D7</existingIndex>
+<indexSegment>CAAF4DA5-693A-9A5F-8E42-012BBD73D4C1</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

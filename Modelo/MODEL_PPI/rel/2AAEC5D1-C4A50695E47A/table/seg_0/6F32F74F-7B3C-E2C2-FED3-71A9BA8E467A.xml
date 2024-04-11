@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6F32F74F-7B3C-E2C2-FED3-71A9BA8E467A" name="BARRIOS">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 08:00:24 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<ordsAlias>table_13</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_DEPARTAMENTO" id="26C630D2-D6EE-9F38-4183-47D6A50C36F1">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 08:05:17 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D0C76D85-56A3-3F14-6057-E25DDC287713" referredColumn="5DFA4AC8-132C-DF02-24E2-1E2FDE6D02ED"/>
+</associations>
+</Column>
+<Column name="ID_CIUDAD" id="706F05BA-82A7-F28C-0C01-24229F17870D">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 08:05:17 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D0C76D85-56A3-3F14-6057-E25DDC287713" referredColumn="1C956FF4-25AF-A35A-C356-BA77DFE1A741"/>
+</associations>
+</Column>
+<Column name="ID_BARRIO" id="07044FCF-77AF-1D41-0169-F35AA1CB744F">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 08:05:17 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE_BARRIO" id="9DDD0765-71A5-3ED9-75EE-D8281E7055C0">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 08:05:17 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="795B258C-0154-8B12-1528-CE75339F22A6" name="BARRIOS_PK">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 08:05:17 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="26C630D2-D6EE-9F38-4183-47D6A50C36F1"/>
+<colUsage columnID="706F05BA-82A7-F28C-0C01-24229F17870D"/>
+<colUsage columnID="07044FCF-77AF-1D41-0169-F35AA1CB744F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="13B54A0B-A0C7-BD88-AA7C-5AA5480FC837" name="BARRIOS_CIUDADES_FK">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 08:11:15 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="26C630D2-D6EE-9F38-4183-47D6A50C36F1"/>
+<colUsage columnID="706F05BA-82A7-F28C-0C01-24229F17870D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

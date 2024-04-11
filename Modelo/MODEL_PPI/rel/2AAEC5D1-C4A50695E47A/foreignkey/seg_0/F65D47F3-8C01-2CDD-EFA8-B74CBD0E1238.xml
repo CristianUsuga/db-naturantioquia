@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F65D47F3-8C01-2CDD-EFA8-B74CBD0E1238" containerWithKeyObject="3607E0D1-4089-773C-228B-7DC7DFCFB9F9" localFKIndex="D5B229F7-A5B4-0AA5-DAE9-1D6A483080C0" name="SECCIONES_ENVIOS_TRANSPORTISTAS_FK">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 12:07:47 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<referredTableLongName>TRANSPORTISTAS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>B44DFD0B-6681-1E6A-8790-AC23D5D08F24</referredTableID>
+<keyObject>9DAAF78B-CC38-8BFE-891E-1E7D82508F36</keyObject>
+<referredKeyID>9DAAF78B-CC38-8BFE-891E-1E7D82508F36</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_TRANSPORTISTA</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

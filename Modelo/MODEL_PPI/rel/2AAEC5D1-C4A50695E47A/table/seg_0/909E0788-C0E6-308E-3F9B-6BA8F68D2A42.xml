@@ -1,0 +1,69 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="909E0788-C0E6-308E-3F9B-6BA8F68D2A42" name="PERFILES">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 06:39:24 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_PERFIL" id="6B49378E-3A70-6FEA-3816-CF5B6142F21E">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 06:41:13 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE_PERFIL" id="60ADDA30-9544-E980-8CA2-99720ACD2948">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 06:41:13 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ROLES_ID" id="22B3EF57-B21A-9813-E48E-43DADF853A1B">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 06:41:13 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A7BBC6FF-BD68-AC42-EF55-A28142A08804" referredColumn="BCEB4315-CD92-CD0A-82AC-03C911C5F382"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F433F267-8124-7E7F-785A-880E9DC9AC8C" name="PERFILES_PK">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 06:41:13 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6B49378E-3A70-6FEA-3816-CF5B6142F21E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D0CD4907-A3AD-08D1-0EBA-6FB0118627F6" name="PERFILES_ROLES_FK">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 06:53:14 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="22B3EF57-B21A-9813-E48E-43DADF853A1B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

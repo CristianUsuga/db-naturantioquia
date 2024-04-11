@@ -1,0 +1,81 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7A727B77-8BA4-D31C-4221-AE18A8264484" name="IMAGENES_PRODUCTOS">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 11:53:26 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<ordsAlias>table_24</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_PRODUCTO" id="D77DFA80-1215-3021-E4C1-4A691D94E6E5">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 11:54:20 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="79F25D97-7474-0FAF-F9D8-AC1DF9656A7F" referredColumn="F2735894-FC19-7944-B033-2E30AB94C4AC"/>
+</associations>
+</Column>
+<Column name="ID_IMAGEN" id="C7D606F4-0204-9D07-4EB8-7CFC8035C036">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 11:54:20 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE_IMAGEN" id="C2CE7D95-A16A-FCBC-6B97-7F863442D1C6">
+<createdBy>usuga</createdBy>
+<createdTime>2023-11-21 20:12:55 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UBICACION_IMAGEN" id="73430A85-F200-74CC-9A75-26A33343BE7D">
+<createdBy>usuga</createdBy>
+<createdTime>2023-11-21 20:12:55 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>400</dataTypeSize>
+<ownDataTypeParameters>400,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CB4F7CA4-9752-98F0-9FC8-FCEA4371D95F" name="IMAGENES_PRODUCTOS_PK">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 11:54:20 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D77DFA80-1215-3021-E4C1-4A691D94E6E5"/>
+<colUsage columnID="C7D606F4-0204-9D07-4EB8-7CFC8035C036"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2F9A8B8A-B4FC-DD02-ADCF-202FAEC52318" name="IMAGENES_PRODUCTOS_PRODUCTOS_FK">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 11:57:41 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D77DFA80-1215-3021-E4C1-4A691D94E6E5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

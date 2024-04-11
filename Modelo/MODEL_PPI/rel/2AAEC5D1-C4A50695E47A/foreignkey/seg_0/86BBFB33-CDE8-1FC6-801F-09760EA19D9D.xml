@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="86BBFB33-CDE8-1FC6-801F-09760EA19D9D" containerWithKeyObject="2A9BCEF7-B04D-A6C5-8E3A-A40DC4B3BDCC" localFKIndex="BFDEA345-19A1-825E-9DB8-0E3A44EBF0F6" name="MOVIMIENTOS_INVENTARIO_LOTES_PRODUCTOS_FK">
+<createdBy>usuga</createdBy>
+<createdTime>2024-03-12 21:49:27 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<referredTableLongName>LOTES_PRODUCTOS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>E3499F41-6F0A-7D59-2162-420518DB6BD2</referredTableID>
+<keyObject>1D9F7BA7-712A-9275-3448-DAA769F843CF</keyObject>
+<referredKeyID>1D9F7BA7-712A-9275-3448-DAA769F843CF</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_LOTE</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

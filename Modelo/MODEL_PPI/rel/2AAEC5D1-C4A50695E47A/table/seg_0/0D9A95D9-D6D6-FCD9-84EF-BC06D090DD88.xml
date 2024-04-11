@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0D9A95D9-D6D6-FCD9-84EF-BC06D090DD88" name="SEXOS">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 06:58:39 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<ordsAlias>table_6</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_SEXO" id="2B3C4652-04E6-BDB0-6288-7A392447B086">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 06:59:41 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE_SEXO" id="88A3124E-0484-2C09-28AB-E0C9E9B1027B">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 06:59:41 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0A57B575-B172-DB6F-5B67-A73D78B69A71" name="SEXOS_PK">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 06:59:41 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2B3C4652-04E6-BDB0-6288-7A392447B086"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

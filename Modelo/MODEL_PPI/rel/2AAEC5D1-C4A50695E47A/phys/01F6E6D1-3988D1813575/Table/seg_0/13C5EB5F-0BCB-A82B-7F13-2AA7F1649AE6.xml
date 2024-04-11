@@ -1,0 +1,43 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="USUARIOS_DIRECCIONES" directorySegmentName="seg_0" id="13C5EB5F-0BCB-A82B-7F13-2AA7F1649AE6">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 07:08:04 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ID_DIRECCION" id="2C34FB16-BD68-A12F-D401-54FD4B92F978">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 07:09:34 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_USUARIO" id="B970AC2C-88A1-DA76-BE86-E9F572E5393F">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 07:08:43 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="USUARIOS_DIRECCIONES_USUARIOS_FK" id="29E2E09A-0AF2-1370-FFE1-2D523614BC4D">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 07:23:25 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="USUARIOS_DIRECCIONES_DIRECCIONES_FK" id="79850B91-C1B1-637A-BCC7-899BBEE7A442">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 08:09:32 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="USUARIOS_DIRECCIONES_PK" id="480495DF-6FED-E1D9-2BC8-1230D54360A9">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 07:09:34 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

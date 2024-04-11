@@ -1,0 +1,116 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1F29F741-3FC0-AA90-AE0D-38571255D0D2" name="PERFILES_FORMULARIOS">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 06:42:49 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_PERFIL" id="858C32C5-9814-0A98-53F6-D34F5990214F">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 06:49:24 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="69DD3D8F-7618-5985-90AF-56630B62EE87" referredColumn="6B49378E-3A70-6FEA-3816-CF5B6142F21E"/>
+</associations>
+</Column>
+<Column name="ID_FORMULARIO" id="FE3C1F76-099D-CA18-2BE9-171CF22C3FC5">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 06:49:24 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EEEFA1B5-032C-5C56-EA5A-3AF6ED96DFDC" referredColumn="6F87D78B-136C-48B1-CAF1-D51D1748491E"/>
+</associations>
+</Column>
+<Column name="INSERTAR" id="9A657B3B-B5F3-82AB-828C-0B7DB9A41946">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 06:49:24 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ACTUALIZAR" id="5F41DEA2-2F5A-F655-1FCE-C39842823540">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 06:49:24 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ELIMINAR" id="5BD96DDA-CFB4-8234-DEDB-B150414E6786">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 06:49:24 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VER" id="2D8C43A2-0320-C519-B184-3D0F10AB6296">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 06:49:24 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5F20C655-9785-3D77-D742-8D7E8B6DE206" name="PERFILES_FORMULARIOS_PK">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 06:49:24 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="858C32C5-9814-0A98-53F6-D34F5990214F"/>
+<colUsage columnID="FE3C1F76-099D-CA18-2BE9-171CF22C3FC5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="24864CA7-C0D5-5BB2-29B9-0F2642A34977" name="PERFILES_FORMULARIOS_PERFILES_FK">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 06:54:48 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="858C32C5-9814-0A98-53F6-D34F5990214F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5806D525-F76B-0E40-B234-7489F65BC71D" name="PERFILES_FORMULARIOS_FORMULARIOS_FK">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 06:55:02 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FE3C1F76-099D-CA18-2BE9-171CF22C3FC5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

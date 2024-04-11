@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="MODEL_PPI" id="793CC6C9-4A7E-7435-A9A5-C092402BB730" version="3.5">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 02:37:17 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>793CC6C9-4A7E-7435-A9A5-C092402BB730</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="654C0838-C4B7-6468-A9BA-092F06C7C720">
+<designStoragePath>C:\</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="8BE433B2-8FD4-B58B-F9C0-948A9B36871D">
+<designStoragePath>C:\</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
+</OSDM_Design>

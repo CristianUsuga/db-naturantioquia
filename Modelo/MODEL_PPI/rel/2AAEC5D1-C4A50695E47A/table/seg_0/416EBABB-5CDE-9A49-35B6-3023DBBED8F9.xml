@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="416EBABB-5CDE-9A49-35B6-3023DBBED8F9" name="DESCUENTOS_PRODUCTOS">
+<createdBy>usuga</createdBy>
+<createdTime>2024-03-13 06:48:31 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<ordsAlias>table_32</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_DESCUENTO" id="97DEEAF3-FA21-603A-6741-3315E2FC85E8">
+<createdBy>usuga</createdBy>
+<createdTime>2024-03-13 06:49:31 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DB5FC0FD-481C-9200-6F31-8877D69FCA02" referredColumn="E8B4A599-CDF9-04D9-85B3-4B67A0509BC2"/>
+</associations>
+</Column>
+<Column name="ID_PRODUCTO" id="EDD9A4AC-F62D-F4E9-2963-61822037977F">
+<createdBy>usuga</createdBy>
+<createdTime>2024-03-13 06:49:31 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8C933835-986E-847A-7E5E-341219A64428" referredColumn="F2735894-FC19-7944-B033-2E30AB94C4AC"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E7EE3A29-933E-67E5-7662-B0482E22EF2F" name="DESCUENTOS_PRODUCTOS_PK">
+<createdBy>usuga</createdBy>
+<createdTime>2024-03-13 06:49:31 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="97DEEAF3-FA21-603A-6741-3315E2FC85E8"/>
+<colUsage columnID="EDD9A4AC-F62D-F4E9-2963-61822037977F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3282BF16-E4EF-9DEA-6BE1-2811EF852B7E" name="DESCUENTOS_PRODUCTOS_PRODUCTOS_FK">
+<createdBy>usuga</createdBy>
+<createdTime>2024-03-13 06:50:12 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EDD9A4AC-F62D-F4E9-2963-61822037977F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="298DDFAA-8585-8F9C-52AE-A0E8448E3374" name="DESCUENTOS_PRODUCTOS_DESCUENTOS_FK">
+<createdBy>usuga</createdBy>
+<createdTime>2024-03-13 06:50:27 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="97DEEAF3-FA21-603A-6741-3315E2FC85E8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

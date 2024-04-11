@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SchemaObject class="oracle.dbtools.crest.model.design.relational.SchemaObject" name="USER_NATURANTIOQUIA" directorySegmentName="seg_0" id="CE4073F2-AF50-BA4D-6BEB-9EE82432F949">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 16:59:48 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<importedID>E56F9155-364C-9E41-7C8F-FD3973CD369F</importedID>
+</SchemaObject>

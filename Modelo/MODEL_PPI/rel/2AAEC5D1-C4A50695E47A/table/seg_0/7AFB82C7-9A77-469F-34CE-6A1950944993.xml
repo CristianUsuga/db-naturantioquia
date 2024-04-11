@@ -1,0 +1,192 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7AFB82C7-9A77-469F-34CE-6A1950944993" name="DESCUENTOS">
+<createdBy>usuga</createdBy>
+<createdTime>2024-03-12 23:08:14 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<ordsAlias>table_29</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_DESCUENTO" id="E8B4A599-CDF9-04D9-85B3-4B67A0509BC2">
+<createdBy>usuga</createdBy>
+<createdTime>2024-03-12 23:15:32 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE_DESCUENTO" id="F47A7BF5-E1E0-4281-43BC-6330B6122560">
+<createdBy>usuga</createdBy>
+<createdTime>2024-03-12 23:15:32 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPCION" id="55082130-ECEF-B14E-0156-EC24BFAD0F2B">
+<createdBy>usuga</createdBy>
+<createdTime>2024-03-12 23:15:32 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_INICIO" id="682EA0F6-D87F-824A-2D3C-B6597E2C71DF">
+<createdBy>usuga</createdBy>
+<createdTime>2024-03-12 23:15:32 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_FIN" id="5F46C1FA-E36F-A23B-B311-52EF9360B7C3">
+<createdBy>usuga</createdBy>
+<createdTime>2024-03-12 23:15:32 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VALOR_DESCUENTO" id="FECB74E2-4480-443B-54D5-6AE5FD8D271E">
+<createdBy>usuga</createdBy>
+<createdTime>2024-03-12 23:15:32 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CANTIDAD_MINIMA" id="B7DEDFD9-4E80-FBD0-B7AC-0D5FCBBD400F">
+<createdBy>usuga</createdBy>
+<createdTime>2024-03-13 08:41:18 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TOPE_DESCUENTO" id="3D5E87BB-5CD8-5246-60EA-F57B1659D5D1">
+<createdBy>usuga</createdBy>
+<createdTime>2024-03-12 23:15:32 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ACTIVO" id="79F9D1E0-1EE0-FC74-32EB-7142285422E3">
+<createdBy>usuga</createdBy>
+<createdTime>2024-03-12 23:15:32 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIPO_DESCUENTO" id="86C5F46D-AB80-3675-81BE-91B5D0E94A1D">
+<createdBy>usuga</createdBy>
+<createdTime>2024-03-12 23:15:32 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D584D0DE-AF58-87DE-BB45-8E3ACC01561E" referredColumn="05697F15-2F83-E9AC-B4E8-D0FD75266795"/>
+</associations>
+</Column>
+<Column name="TIPO_VALOR" id="6651FF70-75BE-2DF2-5BC6-0A0A14EFC3F2">
+<createdBy>usuga</createdBy>
+<createdTime>2024-03-12 23:15:32 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5DB6C996-14AC-9862-7C7C-CD0CCC4B9C41" referredColumn="A34DB0A5-2126-BB86-EFB7-B76518478B31"/>
+</associations>
+</Column>
+<Column name="ID_CATEGORIA" id="224C409F-157B-0A14-B3E5-1E6C6CB88787">
+<createdBy>usuga</createdBy>
+<createdTime>2024-03-13 06:43:25 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="745C448A-C9BD-D31E-BF8B-CD95F8D7B7C4" referredColumn="7E230FED-2C26-ABA2-F4C0-75669DDE0FFA"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B528063F-5BA8-97B5-A8B5-C725E61CFA06" name="DESCUENTOS_PK">
+<createdBy>usuga</createdBy>
+<createdTime>2024-03-12 23:15:32 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E8B4A599-CDF9-04D9-85B3-4B67A0509BC2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FEA12303-9731-59AA-D4AD-BCFD93E5BFCC" name="DESCUENTOS_TIPO_VALOR_FK">
+<createdBy>usuga</createdBy>
+<createdTime>2024-03-13 06:21:39 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6651FF70-75BE-2DF2-5BC6-0A0A14EFC3F2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4754E73D-1E79-C07B-3566-E86439747F59" name="DESCUENTOS_TIPO_DESCUENTO_FK">
+<createdBy>usuga</createdBy>
+<createdTime>2024-03-13 06:21:52 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="86C5F46D-AB80-3675-81BE-91B5D0E94A1D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="37FAC171-FC0C-7A56-3C5A-37273D8B28F6" name="DESCUENTOS_CATEGORIAS_FK">
+<createdBy>usuga</createdBy>
+<createdTime>2024-03-13 06:43:50 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="224C409F-157B-0A14-B3E5-1E6C6CB88787"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,31 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="ROLES" directorySegmentName="seg_0" id="1E0F6697-9256-1404-757D-234B5AB0139C">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 06:37:27 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ROL" id="23CBB17D-5AE5-42AA-CA1D-F77EF46C1D1E">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 06:39:00 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_ROL" id="BCEB4315-CD92-CD0A-82AC-03C911C5F382">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 06:37:53 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="ROLES_PK" id="A5D6D55B-4C13-440D-9861-DB4FEFAFB106">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 06:37:54 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

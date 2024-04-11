@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B1035088-2E13-45D3-AF8A-0CE22746B7CC" name="TIPOS_DOCUMENTOS">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 06:59:53 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<ordsAlias>table_7</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_DOCUMENTO" id="0B98A4D5-332E-6ACC-AF9A-C70FBA3B494A">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 07:00:55 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE_DOCUMENTO" id="B85B1C22-F122-3AA2-BD1E-2B32C952E8CC">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 07:00:55 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="08D4A67F-42E0-4F81-559A-FEBE6244EF02" name="TIPOS_DOCUMENTOS_PK">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 07:00:55 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0B98A4D5-332E-6ACC-AF9A-C70FBA3B494A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

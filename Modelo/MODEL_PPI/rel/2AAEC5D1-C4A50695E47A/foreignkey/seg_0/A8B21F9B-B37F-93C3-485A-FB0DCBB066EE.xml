@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A8B21F9B-B37F-93C3-485A-FB0DCBB066EE" containerWithKeyObject="2A9BCEF7-B04D-A6C5-8E3A-A40DC4B3BDCC" localFKIndex="A5E0ADEF-543D-AD46-8468-38F2FEEA52A7" name="MOVIMIENTOS_INVENTARIO_TIPOS_MOVIMIENTOS_FK">
+<createdBy>usuga</createdBy>
+<createdTime>2024-03-13 09:42:14 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<referredTableLongName>TIPOS_MOVIMIENTOS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>0CA643D5-558C-1AE4-277B-7311298F7DFF</referredTableID>
+<keyObject>D3A5CECD-E643-6E66-23D4-460F2BE7E75F</keyObject>
+<referredKeyID>D3A5CECD-E643-6E66-23D4-460F2BE7E75F</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_T_MOVIMIENTO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

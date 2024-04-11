@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="13C5EB5F-0BCB-A82B-7F13-2AA7F1649AE6" name="USUARIOS_DIRECCIONES">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 07:08:04 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<ordsAlias>table_9</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_USUARIO" id="B970AC2C-88A1-DA76-BE86-E9F572E5393F">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 07:08:43 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0C174691-091A-E22F-E8B8-DD2488E0245C" referredColumn="E332726A-9355-4064-0887-9F02302E0576"/>
+</associations>
+</Column>
+<Column name="ID_DIRECCION" id="2C34FB16-BD68-A12F-D401-54FD4B92F978">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 07:09:34 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7E5719F5-BC79-5861-2622-651D359A1656" referredColumn="81E0821E-DE9D-054D-6DA1-57230E929A64"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="480495DF-6FED-E1D9-2BC8-1230D54360A9" name="USUARIOS_DIRECCIONES_PK">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 07:09:34 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B970AC2C-88A1-DA76-BE86-E9F572E5393F"/>
+<colUsage columnID="2C34FB16-BD68-A12F-D401-54FD4B92F978"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="29E2E09A-0AF2-1370-FFE1-2D523614BC4D" name="USUARIOS_DIRECCIONES_USUARIOS_FK">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 07:23:25 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B970AC2C-88A1-DA76-BE86-E9F572E5393F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="79850B91-C1B1-637A-BCC7-899BBEE7A442" name="USUARIOS_DIRECCIONES_DIRECCIONES_FK">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 08:09:32 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2C34FB16-BD68-A12F-D401-54FD4B92F978"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

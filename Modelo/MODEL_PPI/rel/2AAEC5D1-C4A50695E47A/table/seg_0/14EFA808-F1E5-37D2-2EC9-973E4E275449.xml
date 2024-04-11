@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="14EFA808-F1E5-37D2-2EC9-973E4E275449" name="PRIORIDADES">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 10:49:49 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<ordsAlias>table_16</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_PRIORIDAD" id="B5871CDA-EFDF-FFE9-B752-6A2E0333B70B">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 10:51:02 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE_PRIORIDADES" id="6563357F-3CC7-2B47-AC89-3B02C7255156">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 10:51:02 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5BA845EC-2372-60E7-EDDC-BA362AA2DDA0" name="PRIORIDADES_PK">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 10:51:02 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B5871CDA-EFDF-FFE9-B752-6A2E0333B70B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

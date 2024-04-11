@@ -1,0 +1,31 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="PRIORIDADES" directorySegmentName="seg_0" id="14EFA808-F1E5-37D2-2EC9-973E4E275449">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 10:49:49 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="NOMBRE_PRIORIDADES" id="6563357F-3CC7-2B47-AC89-3B02C7255156">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 10:51:02 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_PRIORIDAD" id="B5871CDA-EFDF-FFE9-B752-6A2E0333B70B">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 10:51:02 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PRIORIDADES_PK" id="5BA845EC-2372-60E7-EDDC-BA362AA2DDA0">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 10:51:02 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

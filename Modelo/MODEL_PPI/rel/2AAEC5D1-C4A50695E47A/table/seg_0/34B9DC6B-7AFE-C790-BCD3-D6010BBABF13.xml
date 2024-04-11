@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="34B9DC6B-7AFE-C790-BCD3-D6010BBABF13" name="SEGUIMIENTOS">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 10:48:11 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<ordsAlias>table_15</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_SEGUIMIENTO" id="BB8064CA-196B-F2F9-6ACD-5A79D1E61C54">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 10:49:14 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE_SEGUIMIENTO" id="CD31D619-BEAE-1FE4-2F69-A5446CEE0409">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 10:49:14 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B52A8D7C-A86C-D3C3-433F-CD7BAED91129" name="SEGUIMIENTOS_PK">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 10:49:14 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BB8064CA-196B-F2F9-6ACD-5A79D1E61C54"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="313C7E3C-EBC9-ECFD-6137-A9245CCC9E43" name="DIRECCIONES">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 07:09:51 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<ordsAlias>table_10</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_DIRECCION" id="81E0821E-DE9D-054D-6DA1-57230E929A64">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 07:21:48 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPCION_DIRECCION" id="80CD08ED-0654-1B86-CCD8-FC12CA8EA6EC">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 07:21:48 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DEPARTAMENTO" id="B81E2887-3520-B6BE-242A-CC11FEDE9D3F">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 07:21:48 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DD283027-BA3C-4BFF-C776-867877812E51" referredColumn="26C630D2-D6EE-9F38-4183-47D6A50C36F1"/>
+</associations>
+</Column>
+<Column name="CIUDAD" id="ADA24773-1DDB-6E92-0E84-655FBC5ABCC8">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 07:21:48 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DD283027-BA3C-4BFF-C776-867877812E51" referredColumn="706F05BA-82A7-F28C-0C01-24229F17870D"/>
+</associations>
+</Column>
+<Column name="BARRIO" id="68DD74A1-1057-E752-D2AE-709A459403E8">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 07:21:48 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DD283027-BA3C-4BFF-C776-867877812E51" referredColumn="07044FCF-77AF-1D41-0169-F35AA1CB744F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="92C19942-C292-610B-AF68-4F4FB8015318" name="DIRECCIONES_PK">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 07:21:48 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="81E0821E-DE9D-054D-6DA1-57230E929A64"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4AAF14E4-8CA8-D633-2ED0-FE522BF33153" name="DIRECCIONES_BARRIOS_FK">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 08:12:10 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B81E2887-3520-B6BE-242A-CC11FEDE9D3F"/>
+<colUsage columnID="ADA24773-1DDB-6E92-0E84-655FBC5ABCC8"/>
+<colUsage columnID="68DD74A1-1057-E752-D2AE-709A459403E8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

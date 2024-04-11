@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1E0F6697-9256-1404-757D-234B5AB0139C" name="ROLES">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 06:37:27 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<ordsAlias>table_2</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_ROL" id="BCEB4315-CD92-CD0A-82AC-03C911C5F382">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 06:37:53 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ROL" id="23CBB17D-5AE5-42AA-CA1D-F77EF46C1D1E">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 06:39:00 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A5D6D55B-4C13-440D-9861-DB4FEFAFB106" name="ROLES_PK">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 06:37:53 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BCEB4315-CD92-CD0A-82AC-03C911C5F382"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

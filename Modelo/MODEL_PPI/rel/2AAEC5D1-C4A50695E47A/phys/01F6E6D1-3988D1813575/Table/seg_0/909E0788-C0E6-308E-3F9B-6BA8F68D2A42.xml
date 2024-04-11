@@ -1,0 +1,43 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="PERFILES" directorySegmentName="seg_0" id="909E0788-C0E6-308E-3F9B-6BA8F68D2A42">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 06:39:24 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ROLES_ID" id="22B3EF57-B21A-9813-E48E-43DADF853A1B">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 06:41:13 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NOMBRE_PERFIL" id="60ADDA30-9544-E980-8CA2-99720ACD2948">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 06:41:13 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_PERFIL" id="6B49378E-3A70-6FEA-3816-CF5B6142F21E">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 06:41:13 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="PERFILES_ROLES_FK" id="D0CD4907-A3AD-08D1-0EBA-6FB0118627F6">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 06:53:14 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PERFILES_PK" id="F433F267-8124-7E7F-785A-880E9DC9AC8C">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 06:41:13 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

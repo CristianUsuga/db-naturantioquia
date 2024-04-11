@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AA8AEDF3-4698-7E9E-C531-326BFB62F8D0" name="CATEGORIAS_PRODUCTOS">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 11:50:57 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<ordsAlias>table_23</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_CATEGORIA" id="DBF8E6B5-CB91-99F0-82EA-EED7B7510BA3">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 11:51:38 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AE9A2081-8CAB-65D7-554D-DA9BD7C23903" referredColumn="7E230FED-2C26-ABA2-F4C0-75669DDE0FFA"/>
+</associations>
+</Column>
+<Column name="ID_PRODUCTO" id="4E3AB576-FB95-C6AC-A89C-38AFB75EFA3F">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 11:51:38 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="72FEB191-1FBE-1FA3-8B2F-646FD507458D" referredColumn="F2735894-FC19-7944-B033-2E30AB94C4AC"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0DC4263A-3175-41AE-CA5C-8435439816E4" name="CATEGORIAS_PRODUCTOS_PK">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 11:51:38 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DBF8E6B5-CB91-99F0-82EA-EED7B7510BA3"/>
+<colUsage columnID="4E3AB576-FB95-C6AC-A89C-38AFB75EFA3F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8E21FCBA-57A3-A250-DE09-60AD9BAEF745" name="CATEGORIAS_PRODUCTOS_CATEGORIAS_FK">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 11:51:52 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DBF8E6B5-CB91-99F0-82EA-EED7B7510BA3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A6BA1470-7842-8B80-77D1-88ED9018A2B3" name="CATEGORIAS_PRODUCTOS_PRODUCTOS_FK">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 11:52:03 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4E3AB576-FB95-C6AC-A89C-38AFB75EFA3F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

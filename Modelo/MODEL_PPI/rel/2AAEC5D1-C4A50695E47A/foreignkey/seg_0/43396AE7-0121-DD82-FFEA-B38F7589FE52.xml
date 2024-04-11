@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="43396AE7-0121-DD82-FFEA-B38F7589FE52" containerWithKeyObject="6D1CAEEE-F2FF-FAE9-C8EC-1985E112F3E3" localFKIndex="17E8DCF5-2F67-90F0-5D1C-BB5E6F21ACE1" name="PEDIDOS_SEGUIMIENTOS_FK">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 10:49:33 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<referredTableLongName>SEGUIMIENTOS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>34B9DC6B-7AFE-C790-BCD3-D6010BBABF13</referredTableID>
+<keyObject>B52A8D7C-A86C-D3C3-433F-CD7BAED91129</keyObject>
+<referredKeyID>B52A8D7C-A86C-D3C3-433F-CD7BAED91129</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_SEGUIMIENTO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

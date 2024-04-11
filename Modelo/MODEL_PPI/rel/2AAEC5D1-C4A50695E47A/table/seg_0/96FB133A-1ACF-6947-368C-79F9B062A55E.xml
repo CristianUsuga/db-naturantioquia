@@ -1,0 +1,216 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="96FB133A-1ACF-6947-368C-79F9B062A55E" name="USUARIOS">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 02:38:42 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="DOCUMENTO_USUARIO" id="E332726A-9355-4064-0887-9F02302E0576">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 03:23:05 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE_USUARIO" id="B4209E01-AC53-4C8D-431B-710448185186">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 03:23:05 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRIMER_APELLIDO_USUARIO" id="82B9666F-81EB-39BA-68EB-52BD4BD9EE03">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 03:23:05 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SEGUNDO_APELLIDO_USUARIO" id="C63AFB70-F11E-7842-9229-7C8204551185">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 03:23:05 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CORREO_USUARIO" id="FDF0318E-6C6E-2A91-A2A6-3F2F532BF7F7">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 03:23:05 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PASSWORD_USUARIO" id="5626CAC3-A14D-CE1A-120C-33814660CD42">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 03:23:05 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_NACIMIENTO_USUARIO" id="1ACA1647-B1E0-96FD-8C3E-D6FF903E225C">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 03:23:05 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CELULAR_USUARIO" id="4294555E-CFD6-1082-77C6-3A7352D7C7A2">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 03:23:05 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TELEFONO_USUARIO" id="35056CDB-B446-6FB5-3AC0-BB9930F76A00">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 03:23:05 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIPO_DOCUMENTO" id="CC19A7AA-2D36-8D85-C43E-9D773AC73CEE">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 03:23:05 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AC6BC008-13C6-9EED-AF67-EE1852D160A0" referredColumn="0B98A4D5-332E-6ACC-AF9A-C70FBA3B494A"/>
+</associations>
+</Column>
+<Column name="ESTADO_USUARIO" id="4AF2B96E-E666-6D17-77E4-CDCF2C997551">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 03:23:05 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1CC30AC6-0732-0423-9516-53A3370C6E6B" referredColumn="56811D78-9B26-8F24-D8C9-6572814C55E9"/>
+</associations>
+</Column>
+<Column name="SEXO_USUARIO" id="9B0B8510-ECC7-FCDC-C125-63C8EF3C54F7">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 03:23:05 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E03DD43B-871A-B9F1-3E9C-00B3BE523106" referredColumn="2B3C4652-04E6-BDB0-6288-7A392447B086"/>
+</associations>
+</Column>
+<Column name="PERFIL_USUARIO" id="390A4876-9E45-5749-2AF8-E6D6985DC446">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 03:23:05 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CEFF6210-81E0-EC80-03C4-FAF27CC90580" referredColumn="6B49378E-3A70-6FEA-3816-CF5B6142F21E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8931E606-0FC0-F052-57F9-B7788818F613" name="USUARIOS_PK">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 03:23:05 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E332726A-9355-4064-0887-9F02302E0576"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BA0B9757-8E1D-2FF4-F978-F6A470045296" name="USUARIOS_SEXOS_FK">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 07:04:44 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9B0B8510-ECC7-FCDC-C125-63C8EF3C54F7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B55D658A-DB67-2B91-E6ED-19832FD879C8" name="USUARIOS_ESTADOS_USUARIOS_FK">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 07:05:03 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4AF2B96E-E666-6D17-77E4-CDCF2C997551"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5B69A9D3-4BB3-18C8-A09D-1BFB7EE667F2" name="USUARIOS_TIPOS_DOCUMENTOS_FK">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 07:05:41 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CC19A7AA-2D36-8D85-C43E-9D773AC73CEE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FDD2E725-25C7-576C-A6CC-10CB1ED64985" name="USUARIOS_PERFILES_FK">
+<createdBy>usuga</createdBy>
+<createdTime>2024-03-12 19:28:42 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="390A4876-9E45-5749-2AF8-E6D6985DC446"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

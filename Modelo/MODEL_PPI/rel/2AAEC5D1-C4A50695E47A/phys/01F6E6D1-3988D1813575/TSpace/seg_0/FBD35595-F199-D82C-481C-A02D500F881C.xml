@@ -1,0 +1,31 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableSpaceOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TableSpaceOraclev10g" name="NATURANTIOQUIA" directorySegmentName="seg_0" id="FBD35595-F199-D82C-481C-A02D500F881C">
+<sourceConnName>PPI - Naturantioquia</sourceConnName>
+<sourceObjSchema>USER_NATURANTIOQUIA</sourceObjSchema>
+<sourceObjName>NATURANTIOQUIA</sourceObjName>
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 16:59:34 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<dsInitialExtent>65536</dsInitialExtent>
+<dsMaxExtents>2147483645</dsMaxExtents>
+<emUniformSize>0</emUniformSize>
+<extentManagement>LOCAL</extentManagement>
+<minExtLen>65536</minExtLen>
+<dsCompression>NOCOMPRESS</dsCompression>
+<encrypt>NO</encrypt>
+<fileType>SMALLFILE</fileType>
+<inMemory>NO</inMemory>
+<dataFiles>
+<DataFile class="oracle.dbtools.crest.model.design.storage.oracle.v10g.DataFileOraclev10g" name="DATAFILE_NATURANTIOQUIA.DBF" id="12C7C6F6-EF2D-B80A-3E35-4BA4F092D056">
+<sourceConnName>PPI - Naturantioquia</sourceConnName>
+<sourceObjName>C:\APP\USUGA\PRODUCT\21C\ORADATA\XE\PPI\DATAFILE_NATURANTIOQUIA.DBF</sourceObjName>
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 17:19:58 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<autoextend>OFF</autoextend>
+<fileName>C:\APP\USUGA\PRODUCT\21C\ORADATA\XE\PPI\DATAFILE_NATURANTIOQUIA.DBF</fileName>
+<nextBlockSize>0</nextBlockSize>
+<size>1024</size>
+</DataFile>
+</dataFiles>
+</TableSpaceOraclev10g>

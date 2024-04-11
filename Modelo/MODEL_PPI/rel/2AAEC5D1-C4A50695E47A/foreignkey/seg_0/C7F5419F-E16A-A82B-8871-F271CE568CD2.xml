@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C7F5419F-E16A-A82B-8871-F271CE568CD2" containerWithKeyObject="816BF915-9866-9A2A-058B-D9E5976763EE" localFKIndex="09DB88A6-3857-A3F9-6D01-CDC43AD4479C" name="PRODUCTOS_LABORATORIOS_FK">
+<createdBy>usuga</createdBy>
+<createdTime>2023-10-14 11:46:57 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<referredTableLongName>LABORATORIOS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>E8C73274-6D9B-0208-022C-873C44ACC007</referredTableID>
+<keyObject>089D11D2-152B-ED9D-0CC0-A3FB96ECBCBA</keyObject>
+<referredKeyID>089D11D2-152B-ED9D-0CC0-A3FB96ECBCBA</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_LABORATORIO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
