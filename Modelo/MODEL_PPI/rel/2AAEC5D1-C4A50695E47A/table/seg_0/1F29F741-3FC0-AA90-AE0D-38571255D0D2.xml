@@ -67,17 +67,6 @@
 <ownDataTypeParameters>,1,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="VER" id="2D8C43A2-0320-C519-B184-3D0F10AB6296">
-<createdBy>usuga</createdBy>
-<createdTime>2023-10-14 06:49:24 UTC</createdTime>
-<ownerDesignName>MODEL_PPI</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>1</dataTypePrecision>
-<ownDataTypeParameters>,1,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="5F20C655-9785-3D77-D742-8D7E8B6DE206" name="PERFILES_FORMULARIOS_PK">

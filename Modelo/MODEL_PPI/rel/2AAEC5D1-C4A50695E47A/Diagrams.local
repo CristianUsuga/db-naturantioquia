@@ -1,4 +1,4 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
 <oracle.dbtools.crest.model.design.relational.RelationalDesign>
-   <object objectType="main_view" objectID="9FE0A2C7-7A72-C108-EDDC-DF27FB0C7F4C" name="PPI_Natura" visible="true"/>
+   <object objectType="main_view" objectID="9FE0A2C7-7A72-C108-EDDC-DF27FB0C7F4C" name="PPI_Natura" visible="false"/>
 </oracle.dbtools.crest.model.design.relational.RelationalDesign>

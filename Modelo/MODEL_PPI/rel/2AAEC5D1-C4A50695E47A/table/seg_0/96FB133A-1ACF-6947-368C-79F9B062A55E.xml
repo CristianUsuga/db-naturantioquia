@@ -146,7 +146,7 @@
 <colAssociation fkAssociation="E03DD43B-871A-B9F1-3E9C-00B3BE523106" referredColumn="2B3C4652-04E6-BDB0-6288-7A392447B086"/>
 </associations>
 </Column>
-<Column name="PERFIL_USUARIO" id="390A4876-9E45-5749-2AF8-E6D6985DC446">
+<Column name="ROL_USUARIO" id="390A4876-9E45-5749-2AF8-E6D6985DC446">
 <createdBy>usuga</createdBy>
 <createdTime>2023-10-14 03:23:05 UTC</createdTime>
 <ownerDesignName>MODEL_PPI</ownerDesignName>
@@ -156,7 +156,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="CEFF6210-81E0-EC80-03C4-FAF27CC90580" referredColumn="6B49378E-3A70-6FEA-3816-CF5B6142F21E"/>
+<colAssociation fkAssociation="83AF632D-1311-E21D-6032-C1BA05E855D4" referredColumn="BCEB4315-CD92-CD0A-82AC-03C911C5F382"/>
 </associations>
 </Column>
 </columns>
@@ -202,9 +202,9 @@
 <colUsage columnID="CC19A7AA-2D36-8D85-C43E-9D773AC73CEE"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="FDD2E725-25C7-576C-A6CC-10CB1ED64985" name="USUARIOS_PERFILES_FK">
+<ind_PK_UK id="3A985BD2-B2BE-27F9-351D-6CA752B2C819" name="USUARIOS_ROLES_FK">
 <createdBy>usuga</createdBy>
-<createdTime>2024-03-12 19:28:42 UTC</createdTime>
+<createdTime>2024-04-16 12:46:11 UTC</createdTime>
 <ownerDesignName>MODEL_PPI</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>

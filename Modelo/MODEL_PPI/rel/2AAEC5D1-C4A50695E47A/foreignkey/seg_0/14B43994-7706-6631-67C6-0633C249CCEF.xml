@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="14B43994-7706-6631-67C6-0633C249CCEF" containerWithKeyObject="FF94083E-722D-79F3-F401-B065FA932029" localFKIndex="7B86F8C0-7DB3-015B-AB6D-78463E3A97C9" name="FORMULARIOS_FORMULARIOS_FK">
+<createdBy>usuga</createdBy>
+<createdTime>2024-04-16 12:53:10 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<referredTableLongName>FORMULARIOS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>FF94083E-722D-79F3-F401-B065FA932029</referredTableID>
+<keyObject>C6C333F9-CC68-29DE-2A9C-68097CC7A6BE</keyObject>
+<referredKeyID>C6C333F9-CC68-29DE-2A9C-68097CC7A6BE</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>ID_FORMULARIO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

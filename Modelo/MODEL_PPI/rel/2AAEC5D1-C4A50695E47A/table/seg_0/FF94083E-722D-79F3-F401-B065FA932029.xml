@@ -29,6 +29,63 @@
 <ownDataTypeParameters>50,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="NODO_PRINCIPAL" id="7A1C5792-D5D4-6079-D2AF-088B75905107">
+<createdBy>usuga</createdBy>
+<createdTime>2024-04-16 12:52:54 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MODULO" id="9917FA3E-31B9-2407-30EC-1C6693B91FA2">
+<createdBy>usuga</createdBy>
+<createdTime>2024-04-16 12:52:54 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_PADRE" id="B3F00E8C-BEC5-B927-E466-D66FBC274800">
+<createdBy>usuga</createdBy>
+<createdTime>2024-04-16 12:52:54 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="14B43994-7706-6631-67C6-0633C249CCEF" referredColumn="6F87D78B-136C-48B1-CAF1-D51D1748491E"/>
+</associations>
+</Column>
+<Column name="ORDEN" id="58646A60-AE4E-1104-9E69-5E0809720132">
+<createdBy>usuga</createdBy>
+<createdTime>2024-04-16 12:52:54 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="URL" id="E9653855-89C4-2639-DAB1-9D9CE7097697">
+<createdBy>usuga</createdBy>
+<createdTime>2024-04-16 12:52:54 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="C6C333F9-CC68-29DE-2A9C-68097CC7A6BE" name="FORMULARIOS_PK">
@@ -40,6 +97,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="6F87D78B-136C-48B1-CAF1-D51D1748491E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7B86F8C0-7DB3-015B-AB6D-78463E3A97C9" name="FORMULARIOS_FORMULARIOS_FK">
+<createdBy>usuga</createdBy>
+<createdTime>2024-04-16 12:53:10 UTC</createdTime>
+<ownerDesignName>MODEL_PPI</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B3F00E8C-BEC5-B927-E466-D66FBC274800"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
