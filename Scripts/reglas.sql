@@ -108,6 +108,9 @@ REFERENCES FORMULARIOS(ID_FORMULARIO);
 -----------------------------------------------PERFILES--------------------------------------------------------
 ALTER TABLE PERFILES
 ADD CONSTRAINT nn_nombre_perfil_perfiles CHECK (NOMBRE_PERFIL IS NOT NULL);
+--ROLES_ID
+ALTER TABLE PERFILES
+ADD CONSTRAINT nn_roles_perfil_perfiles CHECK (ROLES_ID IS NOT NULL);
 
 ALTER TABLE PERFILES
 ADD CONSTRAINT pk_id_perfil_perfiles PRIMARY KEY (ID_PERFIL);
