@@ -1,6 +1,15 @@
---reglas  type: check | search:  "ID_ESTADO_USUARIOS" IS NOT NULL
+
+-- Limpiar pantalla
+CLEAR SCREEN;
+prompt +-------------------------------------------------------------+
+prompt |           Añadiendo Constraints a las Tablas           |
+prompt +-------------------------------------------------------------+
 
 ---------------------------------------ESTADOS_USUARIOS----------------------------------------------------------------
+
+prompt +--------------------------------------------------------+
+prompt |  Constraints para la Tabla ESTADOS_USUARIOS  |
+prompt +--------------------------------------------------------+
 
 ALTER TABLE ESTADOS_USUARIOS
 ADD CONSTRAINT pk_id_estado_usuarios PRIMARY KEY (ID_ESTADO_USUARIOS);
@@ -9,6 +18,10 @@ ALTER TABLE ESTADOS_USUARIOS
 ADD CONSTRAINT nn_nombre_estado_usuarios CHECK (NOMBRE_ESTADO IS NOT NULL);
 
 ------------------------------------------TIPOS_DOCUMENTOS-------------------------------------------------------------
+
+prompt +--------------------------------------------------------+
+prompt |  Constraints para la Tabla TIPOS_DOCUMENTOS  |
+prompt +--------------------------------------------------------+
 
 ALTER TABLE TIPOS_DOCUMENTOS
 ADD CONSTRAINT pk_id_documento_tipos_documentos PRIMARY KEY (ID_DOCUMENTO);
@@ -19,6 +32,10 @@ ADD CONSTRAINT nn_nom_documento_tipos_documentos CHECK (NOMBRE_DOCUMENTO IS NOT 
 
 ------------------------------------------ROLES-------------------------------------------------------------
 
+prompt +--------------------------------------------------------+
+prompt |  Constraints para la Tabla ROLES  |
+prompt +--------------------------------------------------------+
+
 ALTER TABLE ROLES
 ADD CONSTRAINT nn_rol_roles CHECK (ROL IS NOT NULL);
 
@@ -26,6 +43,10 @@ ALTER TABLE ROLES
 ADD CONSTRAINT pk_id_rol_roles PRIMARY KEY (ID_ROL);
 
 ------------------------------------------SEXOS-------------------------------------------------------------
+
+prompt +--------------------------------------------------------+
+prompt |  Constraints para la Tabla SEXOS       |
+prompt +--------------------------------------------------------+
 
 ALTER TABLE SEXOS
 ADD CONSTRAINT nn_nombre_sexo_sexos CHECK (NOMBRE_SEXO IS NOT NULL);
@@ -35,16 +56,29 @@ ADD CONSTRAINT pk_id_sexo_sexos PRIMARY KEY (ID_SEXO);
 
 
 ------------------------------------------DEPARTAMENTOS-------------------------------------------------------------
+
+prompt +--------------------------------------------------------+
+prompt |  Constraints para la Tabla DEPARTAMENTOS     |
+prompt +--------------------------------------------------------+
+
 ALTER TABLE DEPARTAMENTOS
 ADD CONSTRAINT nn_nombre_departamento_departamentos CHECK (NOMBRE_DEPARTAMENTO IS NOT NULL);
+
+ALTER TABLE DEPARTAMENTOS ADD CONSTRAINT uk_nombre_departamento_departamentos UNIQUE (NOMBRE_DEPARTAMENTO);
 
 ALTER TABLE DEPARTAMENTOS
 ADD CONSTRAINT pk_id_departamento_departamentos PRIMARY KEY (ID_DEPARTAMENTO);
 
 ------------------------------------------CIUDADES-------------------------------------------------------------
 
+prompt +--------------------------------------------------------+
+prompt |  Constraints para la Tabla CIUDADES  |
+prompt +--------------------------------------------------------+
+
 ALTER TABLE CIUDADES
 ADD CONSTRAINT nn_nombre_ciudad_ciudades CHECK (NOMBRE_CIUDAD IS NOT NULL);
+
+ALTER TABLE CIUDADES ADD CONSTRAINT uk_nombre_ciudad UNIQUE (NOMBRE_CIUDAD);
 
 ALTER TABLE CIUDADES
 ADD CONSTRAINT pk_id_departamento_id_ciudad_ciudades PRIMARY KEY (ID_DEPARTAMENTO, ID_CIUDAD);
@@ -56,8 +90,14 @@ REFERENCES DEPARTAMENTOS(ID_DEPARTAMENTO);
 
 -----------------------------------------------BARRIOS--------------------------------------------------------
 
+prompt +--------------------------------------------------------+
+prompt |  Constraints para la Tabla BARRIOS  |
+prompt +--------------------------------------------------------+
+
 ALTER TABLE BARRIOS
 ADD CONSTRAINT nn_nombre_barrio_barrios CHECK (NOMBRE_BARRIO IS NOT NULL);
+
+ALTER TABLE BARRIOS ADD CONSTRAINT uk_nombre_barrio UNIQUE (NOMBRE_BARRIO);
 
 ALTER TABLE BARRIOS
 ADD CONSTRAINT pk_id_departamento_id_ciudad_id_barrio_barrios PRIMARY KEY (ID_DEPARTAMENTO, ID_CIUDAD, ID_BARRIO);
@@ -68,6 +108,10 @@ FOREIGN KEY (ID_DEPARTAMENTO, ID_CIUDAD)
 REFERENCES CIUDADES(ID_DEPARTAMENTO, ID_CIUDAD);
 
 -----------------------------------------------DIRECCIONES--------------------------------------------------------
+
+prompt +--------------------------------------------------------+
+prompt |  Constraints para la Tabla DIRECCIONES  |
+prompt +--------------------------------------------------------+
 
 ALTER TABLE DIRECCIONES
 ADD CONSTRAINT nn_descripcion_direccion_direcciones CHECK (DESCRIPCION_DIRECCION IS NOT NULL);
@@ -82,6 +126,11 @@ REFERENCES BARRIOS(ID_DEPARTAMENTO, ID_CIUDAD, ID_BARRIO);
 
 
 -----------------------------------------------FORMULARIOS---------------------------------------------------------
+
+prompt +--------------------------------------------------------+
+prompt |     Constraints para la Tabla FORMULARIOS         |
+prompt +--------------------------------------------------------+
+
 ALTER TABLE FORMULARIOS
 ADD CONSTRAINT nn_nombre_formulario_formularios CHECK (NOMBRE_FORMULARIO IS NOT NULL);
 
@@ -98,6 +147,14 @@ ALTER TABLE FORMULARIOS
 ADD CONSTRAINT nn_url_formularios CHECK (URL IS NOT NULL);
 
 ALTER TABLE FORMULARIOS
+ADD CONSTRAINT chk_boolean_nodo_principal CHECK (NODO_PRINCIPAL IN (0, 1));
+
+ALTER TABLE FORMULARIOS
+ADD CONSTRAINT chk_boolean_modulo CHECK (MODULO IN (0, 1));
+
+CREATE UNIQUE INDEX idx_id_padre_orden ON FORMULARIOS (ID_PADRE, ORDEN);
+
+ALTER TABLE FORMULARIOS
 ADD CONSTRAINT pk_id_formulario_formularios PRIMARY KEY (ID_FORMULARIO);
 
 ALTER TABLE FORMULARIOS
@@ -106,6 +163,11 @@ FOREIGN KEY (ID_PADRE)
 REFERENCES FORMULARIOS(ID_FORMULARIO);
 
 -----------------------------------------------PERFILES--------------------------------------------------------
+
+prompt +--------------------------------------------------------+
+prompt |  Constraints para la Tabla PERFILES  |
+prompt +--------------------------------------------------------+
+
 ALTER TABLE PERFILES
 ADD CONSTRAINT nn_nombre_perfil_perfiles CHECK (NOMBRE_PERFIL IS NOT NULL);
 --ROLES_ID
@@ -123,6 +185,10 @@ REFERENCES ROLES(ID_ROL);
 
 -----------------------------------------------PERFILES_FORMULARIOS--------------------------------------------------------
 
+prompt +--------------------------------------------------------+
+prompt |  Constraints para la Tabla PERFILES_FORMULARIOS  |
+prompt +--------------------------------------------------------+
+
 ALTER TABLE PERFILES_FORMULARIOS
 ADD CONSTRAINT nn_insertar_perfiles_formularios CHECK (INSERTAR IS NOT NULL);
 
@@ -131,6 +197,15 @@ ADD CONSTRAINT nn_actualizar_perfiles_formularios CHECK (ACTUALIZAR IS NOT NULL)
 
 ALTER TABLE PERFILES_FORMULARIOS
 ADD CONSTRAINT nn_eliminar_perfiles_formularios CHECK (ELIMINAR IS NOT NULL);
+
+ALTER TABLE PERFILES_FORMULARIOS
+ADD CONSTRAINT chk_boolean_insertar CHECK (INSERTAR IN (0, 1));
+
+ALTER TABLE PERFILES_FORMULARIOS
+ADD CONSTRAINT chk_boolean_actualizar CHECK (ACTUALIZAR IN (0, 1));
+
+ALTER TABLE PERFILES_FORMULARIOS
+ADD CONSTRAINT chk_boolean_eliminar CHECK (ELIMINAR IN (0, 1));
 
 ALTER TABLE PERFILES_FORMULARIOS
 ADD CONSTRAINT pk_id_perfil_id_formulario_perfiles_formularios PRIMARY KEY (ID_PERFIL, ID_FORMULARIO);
@@ -147,6 +222,11 @@ FOREIGN KEY (ID_FORMULARIO)
 REFERENCES FORMULARIOS(ID_FORMULARIO);
 
 -----------------------------------------------USUARIOS--------------------------------------------------------
+
+prompt +--------------------------------------------------------+
+prompt |  Constraints para la Tabla  USUARIOS |
+prompt +--------------------------------------------------------+
+
 ALTER TABLE USUARIOS
 ADD CONSTRAINT nn_nombre_usuario_usuarios CHECK (NOMBRE_USUARIO IS NOT NULL);
 
@@ -181,6 +261,10 @@ ALTER TABLE USUARIOS
 ADD CONSTRAINT pk_documento_usuario_usuarios PRIMARY KEY (DOCUMENTO_USUARIO);
 
 ALTER TABLE USUARIOS
+ADD CONSTRAINT uk_correo_usuario UNIQUE (CORREO_USUARIO);
+
+
+ALTER TABLE USUARIOS
 ADD CONSTRAINT fk_sexo_usuario_usuarios
 FOREIGN KEY (SEXO_USUARIO)
 REFERENCES SEXOS(ID_SEXO);
@@ -201,6 +285,11 @@ FOREIGN KEY (ROL_USUARIO)
 REFERENCES ROLES(ID_ROL);
 
 -----------------------------------------------SEGUIMIENTOS--------------------------------------------------------
+
+prompt +--------------------------------------------------------+
+prompt |      Constraints para la Tabla SEGUIMIENTOS        |
+prompt +--------------------------------------------------------+
+
 ALTER TABLE SEGUIMIENTOS
 ADD CONSTRAINT nn_nombre_seguimiento_seguimientos CHECK (NOMBRE_SEGUIMIENTO IS NOT NULL);
 
@@ -208,6 +297,11 @@ ALTER TABLE SEGUIMIENTOS
 ADD CONSTRAINT pk_id_seguimiento_seguimientos PRIMARY KEY (ID_SEGUIMIENTO);
 
 -----------------------------------------------PRIORIDADES--------------------------------------------------------
+
+prompt +--------------------------------------------------------+
+prompt |     Constraints para la Tabla PRIORIDADES      |
+prompt +--------------------------------------------------------+
+
 ALTER TABLE PRIORIDADES
 ADD CONSTRAINT nn_nombre_prioridades_prioridades CHECK (NOMBRE_PRIORIDADES IS NOT NULL);
 
@@ -215,6 +309,11 @@ ALTER TABLE PRIORIDADES
 ADD CONSTRAINT pk_id_prioridad_prioridades PRIMARY KEY (ID_PRIORIDAD);
 
 -----------------------------------------------TIPO_TRANSPORTISTA--------------------------------------------------------
+
+prompt +--------------------------------------------------------+
+prompt |    Constraints para la Tabla TIPO_TRANSPORTISTA      |
+prompt +--------------------------------------------------------+
+
 ALTER TABLE TIPO_TRANSPORTISTA
 ADD CONSTRAINT nn_nombre_prioridades_tipo_transportista CHECK (NOMBRE_PRIORIDADES IS NOT NULL);
 
@@ -222,6 +321,11 @@ ALTER TABLE TIPO_TRANSPORTISTA
 ADD CONSTRAINT pk_id_tipo_transportista PRIMARY KEY (ID_TIPO_TRANSPORTISTA);
 
 -----------------------------------------------ESTADOS_LABORATORIOS--------------------------------------------------------
+
+prompt +--------------------------------------------------------+
+prompt |  Constraints para la Tabla ESTADOS_LABORATORIOS    |
+prompt +--------------------------------------------------------+
+
 ALTER TABLE ESTADOS_LABORATORIOS
 ADD CONSTRAINT nn_nombre_estado_laboratorio CHECK (NOMBRE_EST_LAB IS NOT NULL);
 
@@ -229,6 +333,11 @@ ALTER TABLE ESTADOS_LABORATORIOS
 ADD CONSTRAINT pk_id_estado_laboratorio PRIMARY KEY (ID_ESTADO_LAB);
 
 -----------------------------------------------TIPOS_MOVIMIENTOS--------------------------------------------------------
+
+prompt +--------------------------------------------------------+
+prompt |     Constraints para la Tabla TIPOS_MOVIMIENTOS    |
+prompt +--------------------------------------------------------+
+
 ALTER TABLE TIPOS_MOVIMIENTOS
 ADD CONSTRAINT nn_nombre_t_movimiento_tipos_movimientos CHECK (NOMBRE_T_MOVIMIENTO IS NOT NULL);
 
@@ -236,6 +345,11 @@ ALTER TABLE TIPOS_MOVIMIENTOS
 ADD CONSTRAINT pk_id_t_movimiento_tipos_movimientos PRIMARY KEY (ID_T_MOVIMIENTO);
 
 -----------------------------------------------TIPO_DESCUENTO--------------------------------------------------------
+
+prompt +--------------------------------------------------------+
+prompt |  Constraints para la Tabla TIPO_DESCUENTO   |
+prompt +--------------------------------------------------------+
+
 ALTER TABLE TIPO_DESCUENTO
 ADD CONSTRAINT nn_nombre_tipo_descuento_tipo_descuento CHECK (NOMBRE_TIPO_DESC IS NOT NULL);
 
@@ -243,6 +357,11 @@ ALTER TABLE TIPO_DESCUENTO
 ADD CONSTRAINT pk_id_tipo_descuento_tipo_descuento PRIMARY KEY (ID_TIPO_DESC);
 
 -----------------------------------------------TIPO_VALOR--------------------------------------------------------
+
+prompt +--------------------------------------------------------+
+prompt |     Constraints para la Tabla TIPO_VALOR      |
+prompt +--------------------------------------------------------+
+
 ALTER TABLE TIPO_VALOR
 ADD CONSTRAINT nn_nombre_tipo_valor_tipo_valor CHECK (NOMBRE_TIPO_VALOR IS NOT NULL);
 
@@ -250,6 +369,11 @@ ALTER TABLE TIPO_VALOR
 ADD CONSTRAINT pk_id_tipo_valor_tipo_valor PRIMARY KEY (ID_TIPO_VALOR);
 
 -----------------------------------------------CATEGORIAS--------------------------------------------------------
+
+prompt +--------------------------------------------------------+
+prompt |  Constraints para la Tabla CATEGORIAS  |
+prompt +--------------------------------------------------------+
+
 ALTER TABLE CATEGORIAS
 ADD CONSTRAINT nn_nombre_categoria_categorias CHECK (NOMBRE_CATEGORIA IS NOT NULL);
 
@@ -258,6 +382,11 @@ ADD CONSTRAINT pk_id_categoria_categorias PRIMARY KEY (ID_CATEGORIA);
 
 
 -----------------------------------------------LABORATORIOS--------------------------------------------------------
+
+prompt +--------------------------------------------------------+
+prompt |  Constraints para la Tabla LABORATORIOS  |
+prompt +--------------------------------------------------------+
+
 ALTER TABLE LABORATORIOS
 ADD CONSTRAINT nn_nombre_laboratorios CHECK (NOMBRE_LABORATORIO IS NOT NULL);
 
@@ -281,6 +410,11 @@ FOREIGN KEY (ESTADO_LABORATORIO)
 REFERENCES ESTADOS_LABORATORIOS(ID_ESTADO_LAB);
 
 -----------------------------------------------TRANSPORTISTAS--------------------------------------------------------
+
+prompt +--------------------------------------------------------+
+prompt |      Constraints para la Tabla TRANSPORTISTAS      |
+prompt +--------------------------------------------------------+
+
 ALTER TABLE TRANSPORTISTAS
 ADD CONSTRAINT nn_nombre_transportistas CHECK (NOMBRE IS NOT NULL);
 
@@ -304,6 +438,11 @@ FOREIGN KEY (TIPO)
 REFERENCES TIPO_TRANSPORTISTA(ID_TIPO_TRANSPORTISTA);
 
 -----------------------------------------------PRODUCTOS--------------------------------------------------------
+
+prompt +--------------------------------------------------------+
+prompt |      Constraints para la Tabla PRODUCTOS       |
+prompt +--------------------------------------------------------+
+
 ALTER TABLE PRODUCTOS
 ADD CONSTRAINT nn_nombre_producto_productos CHECK (NOMBRE_PRODUCTO IS NOT NULL);
 
@@ -340,6 +479,11 @@ FOREIGN KEY (ID_LABORATORIOS)
 REFERENCES LABORATORIOS(ID_LABORATORIO);
 
 -----------------------------------------------LOTES_PRODUCTOS--------------------------------------------------------
+
+prompt +--------------------------------------------------------+
+prompt |      Constraints para la Tabla LOTES_PRODUCTOS     |
+prompt +--------------------------------------------------------+
+
 ALTER TABLE LOTES_PRODUCTOS
 ADD CONSTRAINT nn_cantidad_lotes_productos CHECK (CANTIDAD IS NOT NULL);
 
@@ -359,6 +503,11 @@ REFERENCES PRODUCTOS(ID_PRODUCTO);
 
 
 ------------------------------------------------MOVIMIENTOS_INVENTARIO--------------------------------------------------------
+
+prompt +--------------------------------------------------------+
+prompt |  Constraints para la Tabla MOVIMIENTOS_INVENTARIO      |
+prompt +--------------------------------------------------------+
+
 ALTER TABLE MOVIMIENTOS_INVENTARIO
 ADD CONSTRAINT nn_id_producto_movimientos_inventario CHECK (ID_PRODUCTO IS NOT NULL);
 
@@ -393,6 +542,11 @@ FOREIGN KEY (TIPO_MOVIMIENTO)
 REFERENCES TIPOS_MOVIMIENTOS(ID_T_MOVIMIENTO);
 
 ------------------------------------------------MOVIMIENTOS_INVENTARIO--------------------------------------------------------
+
+prompt +--------------------------------------------------------+
+prompt |  Constraints para la Tabla MOVIMIENTOS_INVENTARIO  |
+prompt +--------------------------------------------------------+
+
 ALTER TABLE IMAGENES_PRODUCTOS
 ADD CONSTRAINT nn_nombre_imagen_imagenes_productos CHECK (NOMBRE_IMAGEN IS NOT NULL);
 
@@ -409,6 +563,11 @@ REFERENCES PRODUCTOS(ID_PRODUCTO);
 
 
 ------------------------------------------------USUARIOS_DIRECCIONES--------------------------------------------------------
+
+prompt +--------------------------------------------------------+
+prompt |  Constraints para la Tabla USUARIOS_DIRECCIONES  |
+prompt +--------------------------------------------------------+
+
 ALTER TABLE USUARIOS_DIRECCIONES
 ADD CONSTRAINT pk_id_usuario_id_direccion_usuarios_direcciones PRIMARY KEY (ID_USUARIO, ID_DIRECCION);
 
@@ -424,6 +583,9 @@ REFERENCES DIRECCIONES(ID_DIRECCION);
 
 ------------------------------------------------PEDIDOS--------------------------------------------------------
 
+prompt +--------------------------------------------------------+
+prompt |        Constraints para la Tabla PEDIDOS     |
+prompt +--------------------------------------------------------+
 
 ALTER TABLE PEDIDOS
 ADD CONSTRAINT nn_fecha_entrega_pedidos CHECK (FECHA_ENTREGA IS NOT NULL);
@@ -467,6 +629,10 @@ REFERENCES USUARIOS_DIRECCIONES(ID_USUARIO, ID_DIRECCION);
 
 ------------------------------------------------CATEGORIAS_PRODUCTOS--------------------------------------------------------
 
+prompt +--------------------------------------------------------+
+prompt |  Constraints para la Tabla CATEGORIAS_PRODUCTOS  |
+prompt +--------------------------------------------------------+
+
 ALTER TABLE CATEGORIAS_PRODUCTOS
 ADD CONSTRAINT pk_id_categoria_id_producto_categorias_productos PRIMARY KEY (ID_CATEGORIA, ID_PRODUCTO);
 
@@ -481,6 +647,10 @@ FOREIGN KEY (ID_PRODUCTO)
 REFERENCES PRODUCTOS(ID_PRODUCTO);
 
 ------------------------------------------------DETALLE_PEDIDOS--------------------------------------------------------
+
+prompt +--------------------------------------------------------+
+prompt |  Constraints para la Tabla DETALLE_PEDIDOS  |
+prompt +--------------------------------------------------------+
 
 ALTER TABLE DETALLE_PEDIDOS
 ADD CONSTRAINT nn_cantidad_detalle_pedidos CHECK (CANTIDAD IS NOT NULL);
@@ -511,6 +681,11 @@ FOREIGN KEY (ID_PRODUCTO)
 REFERENCES PRODUCTOS(ID_PRODUCTO);
 
 ------------------------------------------------SECCIONES_ENVIOS--------------------------------------------------------
+
+prompt +--------------------------------------------------------+
+prompt |  Constraints para la Tabla SECCIONES_ENVIOS    |
+prompt +--------------------------------------------------------+
+
 ALTER TABLE SECCIONES_ENVIOS
 ADD CONSTRAINT nn_des_seccion_secciones_envios CHECK (DES_SECCION IS NOT NULL);
 
@@ -543,6 +718,11 @@ FOREIGN KEY (ID_PRODUCTO, ID_PEDIDO)
 REFERENCES DETALLE_PEDIDOS(ID_PRODUCTO, ID_PEDIDOS);
 
 ------------------------------------------------DESCUENTOS--------------------------------------------------------
+
+prompt +--------------------------------------------------------+
+prompt |      Constraints para la Tabla DESCUENTOS      |
+prompt +--------------------------------------------------------+
+
 ALTER TABLE DESCUENTOS
 ADD CONSTRAINT nn_nombre_descuento_descuentos CHECK (NOMBRE_DESCUENTO IS NOT NULL);
 
@@ -568,6 +748,10 @@ ALTER TABLE DESCUENTOS
 ADD CONSTRAINT nn_id_categoria_descuentos CHECK (ID_CATEGORIA IS NOT NULL);
 
 ALTER TABLE DESCUENTOS
+ADD CONSTRAINT chk_boolean_activo CHECK (ACTIVO IN (0, 1));
+
+
+ALTER TABLE DESCUENTOS
 ADD CONSTRAINT pk_id_descuento_descuentos PRIMARY KEY (ID_DESCUENTO);
 
 ALTER TABLE DESCUENTOS
@@ -586,6 +770,11 @@ FOREIGN KEY (ID_CATEGORIA)
 REFERENCES CATEGORIAS(ID_CATEGORIA);
 
 ------------------------------------------------DESCUENTOS_PRODUCTOS--------------------------------------------------------
+
+prompt +--------------------------------------------------------+
+prompt |  Constraints para la Tabla DESCUENTOS_PRODUCTOS     |
+prompt +--------------------------------------------------------+
+
 ALTER TABLE DESCUENTOS_PRODUCTOS
 ADD CONSTRAINT pk_id_descuento_id_producto_descuentos_productos PRIMARY KEY (ID_DESCUENTO, ID_PRODUCTO);
 
@@ -598,3 +787,81 @@ ALTER TABLE DESCUENTOS_PRODUCTOS
 ADD CONSTRAINT fk_id_producto_descuentos_productos
 FOREIGN KEY (ID_PRODUCTO)
 REFERENCES PRODUCTOS(ID_PRODUCTO);
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+----SECCIONES_ENVIOS
+
+CREATE OR REPLACE TRIGGER trg_comparar_cantidad_entregada
+BEFORE INSERT ON SECCIONES_ENVIOS
+FOR EACH ROW
+DECLARE
+  v_cantidad_pedido DETALLE_PEDIDOS.CANTIDAD%TYPE;
+BEGIN
+ 
+  SELECT CANTIDAD
+  INTO v_cantidad_pedido
+  FROM DETALLE_PEDIDOS
+  WHERE ID_PRODUCTO = :NEW.ID_PRODUCTO
+  AND ID_PEDIDOS = :NEW.ID_PEDIDO;
+
+
+  IF :NEW.CANTIDAD_ENTREGADA != v_cantidad_pedido THEN
+    DBMS_OUTPUT.PUT_LINE('ADVERTENCIA: Pedido no completado todavía.');
+  END IF;
+
+EXCEPTION
+  WHEN NO_DATA_FOUND THEN
+    DBMS_OUTPUT.PUT_LINE('ADVERTENCIA: No se encontró el detalle del pedido para el producto con ID ' || :NEW.ID_PRODUCTO || ' y el pedido con ID ' || :NEW.ID_PEDIDO);
+END;
+/
+
+
+---
+
+CREATE OR REPLACE TRIGGER registrar_entrada_productos
+BEFORE INSERT ON MOVIMIENTOS_INVENTARIO
+FOR EACH ROW
+DECLARE
+    v_tipo_movimiento INTEGER;
+    v_stock_maximo INTEGER;
+    v_cantidad_actual INTEGER;
+BEGIN
+
+    SELECT ID_T_MOVIMIENTO INTO v_tipo_movimiento
+    FROM TIPOS_MOVIMIENTOS
+    WHERE NOMBRE_T_MOVIMIENTO = 'Entrada'; 
+
+
+    IF :NEW.TIPO_MOVIMIENTO = v_tipo_movimiento THEN
+    
+        SELECT STOCK_MAXIMO INTO v_stock_maximo
+        FROM PRODUCTOS
+        WHERE ID_PRODUCTO = :NEW.ID_PRODUCTO;
+
+
+        SELECT CANTIDAD_ACTUAL INTO v_cantidad_actual
+        FROM PRODUCTOS
+        WHERE ID_PRODUCTO = :NEW.ID_PRODUCTO;
+
+
+        IF v_cantidad_actual + :NEW.CANTIDAD > v_stock_maximo THEN
+            RAISE_APPLICATION_ERROR(-20001, 'La cantidad a ingresar supera el stock máximo permitido.');
+        ELSE
+            INSERT INTO LOTES_PRODUCTOS (ID_LOTE, CANTIDAD, FECHA_VENCIMIENTO, ID_PRODUCTO)
+            VALUES (:NEW.ID_LOTE, :NEW.CANTIDAD, :NEW.FECHA_VENCIMIENTO, :NEW.ID_PRODUCTO);
+
+            UPDATE PRODUCTOS
+            SET CANTIDAD_ACTUAL = v_cantidad_actual + :NEW.CANTIDAD,
+                FECHA_ACTUALIZACION = SYSDATE
+            WHERE ID_PRODUCTO = :NEW.ID_PRODUCTO;
+        END IF;
+    END IF;
+END;
+/
+
+--
