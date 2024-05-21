@@ -88,7 +88,6 @@ CREATE TABLE ESTADOS_USUARIOS (
     ID_ESTADO_USUARIOS INTEGER,
     NOMBRE_ESTADO NVARCHAR2(10)
 );
-TABLESPACE us_naturantioquia;
 prompt --> Tabla ESTADOS_USUARIOS creada correctamente.
 
 ------------------------------------------TIPOS_DOCUMENTOS-------------------------------------------------------------
@@ -97,7 +96,6 @@ CREATE TABLE TIPOS_DOCUMENTOS
   ID_DOCUMENTO INTEGER 
 , NOMBRE_DOCUMENTO VARCHAR2(50) 
 );
-TABLESPACE us_naturantioquia;
 prompt --> Tabla TIPOS_DOCUMENTOS creada correctamente.
 
 ------------------------------------------ROLES-------------------------------------------------------------
@@ -106,7 +104,6 @@ CREATE TABLE ROLES
   ID_ROL INTEGER 
 , ROL VARCHAR2(20) 
 );
-TABLESPACE us_naturantioquia;
 prompt --> Tabla ROLES creada correctamente.
 
 ------------------------------------------SEXOS-------------------------------------------------------------
@@ -115,7 +112,6 @@ CREATE TABLE SEXOS
   ID_SEXO INTEGER 
 , NOMBRE_SEXO VARCHAR2(20) 
 );
-TABLESPACE us_naturantioquia;
 prompt --> Tabla SEXOS creada correctamente.
 
 ------------------------------------------DEPARTAMENTOS-------------------------------------------------------------
@@ -124,7 +120,6 @@ CREATE TABLE DEPARTAMENTOS
   ID_DEPARTAMENTO INTEGER 
 , NOMBRE_DEPARTAMENTO VARCHAR2(60) 
 );
-TABLESPACE us_naturantioquia;
 prompt --> Tabla DEPARTAMENTOS creada correctamente.
 
 ------------------------------------------CIUDADES-------------------------------------------------------------
@@ -134,7 +129,6 @@ CREATE TABLE CIUDADES
 , ID_CIUDAD INTEGER 
 , NOMBRE_CIUDAD VARCHAR2(50) 
 );
-TABLESPACE us_naturantioquia;
 prompt --> Tabla CIUDADES creada correctamente.
 
 -----------------------------------------------BARRIOS--------------------------------------------------------
@@ -145,7 +139,6 @@ CREATE TABLE BARRIOS
 , ID_BARRIO INTEGER 
 , NOMBRE_BARRIO VARCHAR2(50) 
 );
-TABLESPACE us_naturantioquia;
 prompt --> Tabla BARRIOS creada correctamente.
 
 -----------------------------------------------DIRECCIONES--------------------------------------------------------
@@ -157,7 +150,6 @@ CREATE TABLE DIRECCIONES
 , CIUDAD INTEGER 
 , BARRIO INTEGER 
 );
-TABLESPACE us_naturantioquia;
 prompt --> Tabla DIRECCIONES creada correctamente.
 
 -----------------------------------------------FORMULARIOS--------------------------------------------------------
@@ -171,7 +163,6 @@ CREATE TABLE FORMULARIOS
 , ORDEN INTEGER 
 , URL VARCHAR2(100) 
 );
-TABLESPACE us_naturantioquia;
 prompt --> Tabla FORMULARIOS creada correctamente.
 
 -----------------------------------------------PERFILES--------------------------------------------------------
@@ -181,7 +172,6 @@ CREATE TABLE PERFILES
 , NOMBRE_PERFIL VARCHAR2(50) 
 , ROLES_ID INTEGER 
 );
-TABLESPACE us_naturantioquia;
 prompt --> Tabla PERFILES creada correctamente.
 
 -----------------------------------------------PERFILES_FORMULARIOS--------------------------------------------------------
@@ -193,7 +183,6 @@ CREATE TABLE PERFILES_FORMULARIOS
 , ACTUALIZAR NUMBER(1) 
 , ELIMINAR NUMBER(1) 
 );
-TABLESPACE us_naturantioquia;
 prompt --> Tabla PERFILES_FORMULARIOS creada correctamente.
 
 
@@ -214,7 +203,6 @@ CREATE TABLE USUARIOS
 , SEXO_USUARIO INTEGER 
 , ROL_USUARIO INTEGER 
 );
-TABLESPACE us_naturantioquia;
 prompt --> Tabla USUARIOS creada correctamente.
 
 -----------------------------------------------SEGUIMIENTOS--------------------------------------------------------
@@ -223,7 +211,6 @@ CREATE TABLE SEGUIMIENTOS
   ID_SEGUIMIENTO INTEGER 
 , NOMBRE_SEGUIMIENTO VARCHAR2(20) 
 );
-TABLESPACE us_naturantioquia;
 prompt --> Tabla SEGUIMIENTOS creada correctamente.
 
 -----------------------------------------------PRIORIDADES--------------------------------------------------------
@@ -232,7 +219,6 @@ CREATE TABLE PRIORIDADES
   ID_PRIORIDAD INTEGER 
 , NOMBRE_PRIORIDADES VARCHAR2(20) 
 );
-TABLESPACE us_naturantioquia;
 prompt --> Tabla PRIORIDADES creada correctamente.
 
 -----------------------------------------------TIPO_TRANSPORTISTA--------------------------------------------------------
@@ -241,7 +227,6 @@ CREATE TABLE TIPO_TRANSPORTISTA
   ID_TIPO_TRANSPORTISTA INTEGER 
 , NOMBRE_PRIORIDADES VARCHAR2(50) 
 );
-TABLESPACE us_naturantioquia;
 prompt --> Tabla TIPO_TRANSPORTISTA creada correctamente.
 
 -----------------------------------------------ESTADOS_LABORATORIOS--------------------------------------------------------
@@ -250,7 +235,6 @@ CREATE TABLE ESTADOS_LABORATORIOS
   ID_ESTADO_LAB INTEGER 
 , NOMBRE_EST_LAB VARCHAR2(50) 
 );
-TABLESPACE us_naturantioquia;
 prompt --> Tabla ESTADOS_LABORATORIOS creada correctamente.
 
 -----------------------------------------------TIPOS_MOVIMIENTOS--------------------------------------------------------
@@ -259,7 +243,6 @@ CREATE TABLE TIPOS_MOVIMIENTOS
   ID_T_MOVIMIENTO INTEGER 
 , NOMBRE_T_MOVIMIENTO VARCHAR2(10) 
 );
-TABLESPACE us_naturantioquia;
 prompt --> Tabla TIPOS_MOVIMIENTOS creada correctamente.
 
 -----------------------------------------------TIPO_DESCUENTO--------------------------------------------------------
@@ -268,7 +251,6 @@ CREATE TABLE TIPO_DESCUENTO
   ID_TIPO_DESC INTEGER 
 , NOMBRE_TIPO_DESC VARCHAR2(15) 
 );
-TABLESPACE us_naturantioquia;
 prompt --> Tabla TIPO_DESCUENTO creada correctamente.
 -----------------------------------------------TIPO_VALOR--------------------------------------------------------
 CREATE TABLE TIPO_VALOR 
@@ -276,7 +258,6 @@ CREATE TABLE TIPO_VALOR
   ID_TIPO_VALOR INTEGER 
 , NOMBRE_TIPO_VALOR VARCHAR2(10) 
 );
-TABLESPACE us_naturantioquia;
 prompt --> Tabla TIPO_VALOR creada correctamente.
 
 -----------------------------------------------CATEGORIAS--------------------------------------------------------
@@ -285,7 +266,6 @@ CREATE TABLE CATEGORIAS
   ID_CATEGORIA INTEGER 
 , NOMBRE_CATEGORIA VARCHAR2(50) 
 );
-TABLESPACE us_naturantioquia;
 prompt --> Tabla CATEGORIAS creada correctamente.
 -----------------------------------------------LABORATORIOS--------------------------------------------------------
 CREATE TABLE LABORATORIOS 
@@ -297,7 +277,6 @@ CREATE TABLE LABORATORIOS
 , CELULAR INTEGER 
 , ESTADO_LABORATORIO INTEGER 
 );
-TABLESPACE us_naturantioquia;
 prompt --> Tabla LABORATORIOS creada correctamente.
 
 -----------------------------------------------TRANSPORTISTAS--------------------------------------------------------
@@ -310,7 +289,6 @@ CREATE TABLE TRANSPORTISTAS
 , CORREO VARCHAR2(100) 
 , TIPO INTEGER 
 );
-TABLESPACE us_naturantioquia;
 prompt --> Tabla TRANSPORTISTAS creada correctamente.
 
 -----------------------------------------------PRODUCTOS--------------------------------------------------------
@@ -327,7 +305,6 @@ CREATE TABLE PRODUCTOS
 , FECHA_ACTUALIZACION DATE 
 , ID_LABORATORIOS INTEGER 
 );
-TABLESPACE us_naturantioquia;
 prompt --> Tabla PRODUCTOS creada correctamente.
 
 -----------------------------------------------LOTES_PRODUCTOS--------------------------------------------------------
@@ -338,7 +315,6 @@ CREATE TABLE LOTES_PRODUCTOS
 , FECHA_VENCIMIENTO DATE 
 , ID_PRODUCTO INTEGER 
 );
-TABLESPACE us_naturantioquia;
 prompt --> Tabla LOTES_PRODUCTOS creada correctamente.
 
 -----------------------------------------------MOVIMIENTOS_INVENTARIO--------------------------------------------------------
@@ -352,7 +328,6 @@ CREATE TABLE MOVIMIENTOS_INVENTARIO
 , NOTAS VARCHAR2(250) 
 , TIPO_MOVIMIENTO INTEGER 
 );
-TABLESPACE us_naturantioquia;
 prompt --> Tabla MOVIMIENTOS_INVENTARIO creada correctamente.
 
 ------------------------------------------------IMAGENES_PRODUCTOS--------------------------------------------------------
@@ -363,7 +338,6 @@ CREATE TABLE IMAGENES_PRODUCTOS
 , NOMBRE_IMAGEN VARCHAR2(100) 
 , UBICACION_IMAGEN VARCHAR2(400) 
 );
-TABLESPACE us_naturantioquia;
 prompt --> Tabla IMAGENES_PRODUCTOS creada correctamente.
 
 ------------------------------------------------USUARIOS_DIRECCIONES--------------------------------------------------------
@@ -373,7 +347,6 @@ CREATE TABLE USUARIOS_DIRECCIONES
   ID_USUARIO INTEGER 
 , ID_DIRECCION INTEGER 
 );
-TABLESPACE us_naturantioquia;
 prompt --> Tabla USUARIOS_DIRECCIONES creada correctamente.
 
 ------------------------------------------------PEDIDOS--------------------------------------------------------
@@ -389,7 +362,6 @@ CREATE TABLE PEDIDOS
 , ID_USUARIO INTEGER 
 , ID_DIRECCION INTEGER 
 );
-TABLESPACE us_naturantioquia;
 prompt --> Tabla PEDIDOS creada correctamente.
 
 ------------------------------------------------CATEGORIAS_PRODUCTOS--------------------------------------------------------
@@ -398,7 +370,6 @@ CREATE TABLE CATEGORIAS_PRODUCTOS
   ID_CATEGORIA INTEGER 
 , ID_PRODUCTO INTEGER 
 );
-TABLESPACE us_naturantioquia;
 prompt --> Tabla CATEGORIAS_PRODUCTOS creada correctamente.
 
 ------------------------------------------------DETALLE_PEDIDOS--------------------------------------------------------
@@ -412,7 +383,6 @@ CREATE TABLE DETALLE_PEDIDOS
 , CANTIDAD_ENTREGADA INTEGER 
 , DESCUENTO_APLICADO NUMBER(10,2) 
 );
-TABLESPACE us_naturantioquia;
 prompt --> Tabla DETALLE_PEDIDOS creada correctamente.
 
 ------------------------------------------------SECCIONES_ENVIOS--------------------------------------------------------
@@ -427,7 +397,6 @@ CREATE TABLE SECCIONES_ENVIOS
 , ID_PRODUCTO INTEGER 
 , ID_PEDIDO INTEGER 
 );
-TABLESPACE us_naturantioquia;
 prompt --> Tabla SECCIONES_ENVIOS creada correctamente.
 
 ------------------------------------------------DESCUENTOS--------------------------------------------------------
@@ -446,7 +415,6 @@ CREATE TABLE DESCUENTOS
 , TIPO_VALOR INTEGER 
 , ID_CATEGORIA INTEGER 
 );
-TABLESPACE us_naturantioquia;
 prompt --> Tabla DESCUENTOS creada correctamente.
 
 ------------------------------------------------DESCUENTOS_PRODUCTOS--------------------------------------------------------
@@ -455,5 +423,4 @@ CREATE TABLE DESCUENTOS_PRODUCTOS
   ID_DESCUENTO INTEGER 
 , ID_PRODUCTO INTEGER 
 );
-TABLESPACE us_naturantioquia;
 prompt --> Tabla DESCUENTOS_PRODUCTOS creada correctamente.
